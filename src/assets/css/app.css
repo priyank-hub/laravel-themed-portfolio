@@ -1,0 +1,74 @@
+body {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.text-laravel {
+    color: #FF2C1F;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.brand {
+    font-weight: 900;
+}
+
+.bg-light-grey {
+    background-color: #f5f5fa;
+}
+
+.text-black {
+    color: black;
+}
+
+.font-weight-bold {
+    font-weight: 600;
+}
+
+button {
+    background: transparent !important;
+    border-color: #FF2C1F !important;
+    color: #FF2C1F !important;
+    font-size: 0.875rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    border-radius: 0px !important;
+    transition: 0.3s all !important;
+}
+
+button:hover {
+    background: #FF2C1F !important;
+    color: #fff !important;
+    translate: -3px -3px;
+}
+
+.border-left {
+    border-left: 0.5px solid #959595;
+}
+
+.underline::after {
+    bottom: -7px;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    background: #FF2C1F;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 100%;
+}
+
+@media screen and (max-width: 995px) {
+    button {
+        background: #FF2C1F !important;
+        color: #fff !important;
+    }
+}
+
+.box-shadow {
+    box-shadow: 0px 0px 15px 4px rgba(255, 44, 31, 0.1);
+}

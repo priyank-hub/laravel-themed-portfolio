@@ -1,28 +1,187 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="bg-light-grey nav-bar">
+      <div class="container-fluid pt-3" :class="isVisible ? '' : 'pb-3'">
+        <nav class="desktop">
+          <h3 class="mb-0 text-laravel brand">
+            <a href="#home" class="text-laravel">
+              PP
+            </a>
+          </h3>
+          <ul class="nav-links mb-0">
+            <li v-for="item in menu" :key="item" class="menu">
+              <a :href="item.url" class="text-black menu-item">
+                {{ item.name }}
+              </a>
+            </li>
+          </ul>
+        </nav>  
+
+        <div class="justify-content-between align-items center mobile">
+          <div class="col text-left">
+            <h3 class="mb-0 text-laravel brand">
+              <a href="#home" class="text-laravel">
+                PP
+              </a>
+            </h3>
+          </div>
+          <div class="col text-right" v-b-toggle.my-collapse>
+            <i class="fas fa-bars" v-if="! isVisible"></i>
+            <i class="fas fa-times" v-if="isVisible"></i>
+          </div>
+        </div>
+
+        <b-collapse id="my-collapse" v-model="isVisible">
+          <div class="py-3">
+            <ul class="p-0">
+              <li v-for="item in menu" :key="item" class="m-0 py-2 border-bottom text-black" style="font-weight: 600; list-style-type: none; text-align: left">
+                <a :href="item.url" class="menu-item text-black" @click="isVisible = false">
+                  {{ item.name }}
+                </a>
+              </li>
+            </ul>
+          </div>
+        </b-collapse>
+      </div>
+    </div>
+
+    <section id="home">
+      <HomePage msg="Welcome to Your Vue.js App"/>
+    </section>
+
+    <section id="portfolio" style="padding-top: 90px">
+      <Portfolio />
+    </section>
+
+    <section id="about-me" style="padding-top: 90px">
+      <AboutMe />
+    </section>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HomePage from './components/HomePage.vue'
+import AboutMe from './components/AboutMe.vue'
+import Portfolio from './components/Portfolio.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HomePage,
+    AboutMe,
+    Portfolio,
+  },
+
+  data() {
+    return {
+      isVisible: false,
+      menu: [
+        {
+          name: 'Portfolio',
+          url: '#portfolio',
+        },
+        {
+          name: 'About',
+          url: '#about-me',
+        },
+        {
+          name: 'Resume',
+          url: '#resume',
+        },
+        {
+          name: 'Contact',
+          url: '#contact',
+        }
+      ]
+    }
+  },
+
+  computed: {
+
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+.nav-links li {
+  list-style-type: none;
+  text-align: left;
+}
+
+.desktop, .mobile {
+  z-index: 10;
+}
+
+
+@media screen and (max-width: 995px) {
+  .desktop {
+    display: none !important;
+  }
+
+  .mobile {
+    display: flex !important;
+  }
+}
+
+.mobile {
+  display: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.brand a:hover {
+  color: #FF2C1F;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+}
+
+.nav-links a {
+  position: relative;
+  /* text-transform: uppercase; */
+  font-size: 0.975rem !important;
+  font-weight: 300 !important;
+}
+
+.nav-links a::after {
+  bottom: -7px;
+  content: "";
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  background: #FF2C1F;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.nav-links a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.nav-bar {
+  position: fixed; 
+  width: 100%;
+  z-index: 100;
 }
 </style>
