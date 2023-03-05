@@ -56,6 +56,10 @@
     <section id="about-me" style="padding-top: 90px">
       <AboutMe />
     </section>
+
+    <section id="resume" style="padding-top: 90px">
+      <ResumeSection />
+    </section>
   </div>
 </template>
 
@@ -63,6 +67,7 @@
 import HomePage from './components/HomePage.vue'
 import AboutMe from './components/AboutMe.vue'
 import Portfolio from './components/Portfolio.vue'
+import ResumeSection from './components/ResumeSection.vue'
 
 export default {
   name: 'App',
@@ -70,6 +75,7 @@ export default {
     HomePage,
     AboutMe,
     Portfolio,
+    ResumeSection,
   },
 
   data() {

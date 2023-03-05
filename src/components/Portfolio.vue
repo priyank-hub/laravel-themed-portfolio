@@ -2,15 +2,23 @@
   <div class="">
     <!-- <h1 class="font-weight-bold">Portfolio</h1> -->
 
-    <div class="container mb-5 position-relative">
+    <!-- <div class="container mb-5 position-relative">
         <div class="bar m-auto mb-4"></div>
+        <div class="mb-3">
+            <h4 class="fw-bold text-center">Technologies I've worked with</h4>
+        </div>
         <div class="mx-0 skill-grid">
             <div class="my-4 skill-item" v-for="item in skills" :key="item">
-                <img :src="item.url" height="55px" style="object-fit: cover" alt="">
+                <a :href="item.website" target="_blank">
+                    <img :src="item.url" height="55px" style="object-fit: cover" alt="">
+                    <div class="subtitle text-muted mt-3">
+                        {{ item.name }}
+                    </div>
+                </a>
             </div>
         </div>
         <div class="bar m-auto mt-4"></div>
-    </div>
+    </div> -->
 
     <div class="container mt-4">
         <div class="row mx-0">
@@ -263,17 +271,17 @@ export default {
             },
             {
                 url: '/assets/skills/git.png',
-                name: 'C',
+                name: 'Git',
                 website: 'https://www.tutorialspoint.com/cprogramming/index.htm'
             },
             {
                 url: '/assets/skills/Bootstrap.png',
-                name: 'C',
+                name: 'Bootstrap',
                 website: 'https://www.tutorialspoint.com/cprogramming/index.htm'
             },
             {
                 url: '/assets/skills/postman-icon.svg',
-                name: 'C',
+                name: 'Postman',
                 website: 'https://www.tutorialspoint.com/cprogramming/index.htm'
             }
         ]
@@ -359,5 +367,15 @@ li::marker {
     width: 100px;
     height: 2px;
     background: rgb(214, 214, 214);
+}
+
+.skill-item {
+    transition: 0.3s all;
+}
+
+.skill-item:hover {
+    transform: scale(1.1, 1.1);
+    /* background: #FF2C1F; */
+    /* box-shadow: 0px 0px 15px 4px rgba(255, 44, 31, 0.1); */
 }
 </style>
