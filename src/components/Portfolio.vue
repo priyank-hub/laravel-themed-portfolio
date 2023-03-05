@@ -2,12 +2,14 @@
   <div class="">
     <!-- <h1 class="font-weight-bold">Portfolio</h1> -->
 
-    <div class="container mb-5">
+    <div class="container mb-5 position-relative">
+        <div class="bar m-auto mb-4"></div>
         <div class="mx-0 skill-grid">
             <div class="my-4 skill-item" v-for="item in skills" :key="item">
                 <img :src="item.url" height="55px" style="object-fit: cover" alt="">
             </div>
         </div>
+        <div class="bar m-auto mt-4"></div>
     </div>
 
     <div class="container mt-4">
@@ -321,6 +323,9 @@ li::marker {
     .skill-item {
         border: none !important;
     }
+    .skill-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)) !important;
+    }
 
     h3 {
         font-size: 1.5rem;
@@ -344,8 +349,15 @@ li::marker {
 
 .skill-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     grid-column-gap: 30px;
     grid-row-gap: 25px;
+}
+
+.bar {
+    width: 100px;
+    height: 2px;
+    background: rgb(214, 214, 214);
 }
 </style>
