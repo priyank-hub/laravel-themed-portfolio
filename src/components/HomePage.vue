@@ -9,7 +9,7 @@
           <div class="greeting">I'm a Full Stack Web Developer.</div>
 
           <div class="d-flex flex-row mt-4 social">
-            <b-button class="">
+            <b-button class="bg-laravel text-white">
               <span>
                 <i class="fab fa-linkedin mx-2"></i>
                 LinkedIn

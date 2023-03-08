@@ -6,6 +6,10 @@ body {
     color: #FF2C1F;
 }
 
+.bg-laravel {
+    background-color: #FF2C1F !important;
+}
+
 .text-left {
     text-align: left;
 }

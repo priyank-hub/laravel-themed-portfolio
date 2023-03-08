@@ -24,6 +24,48 @@
         <div class="row mx-0">
             <div class="col-12 card-item">
                 <div class="row mx-0 align-items-center justify-content-between project-item">
+                    <div class="col-12 col-lg-12 col-xl-6 text-left">
+                        <!-- content -->
+                        <h3 class="text-black fw-bold">Spotify Data Visualizer</h3>
+                        <div class="text-muted">
+                            <p>
+                                To visualize Spotify data on the web, including playlists, top artists, top tracks, and track information. 
+                                Technologies used for this project are <span class="text-laravel">Node.js</span> for the backend, <span class="text-laravel">Vue.js</span> for the frontend, <span class="text-laravel">Bootstrap</span> for css, and various Spotify APIs for data retrieval.
+                            <p>
+                                Key features includes:
+                                <ul class="m-0">
+                                    <li>User authentication: Users can log in with their Spotify account to access their data.</li>
+                                    <li>A dashboard, top tracks, top artists and playlists screens that shows an overview of the user's spotify account.</li>
+                                    <li>The UI is designed to be responsive and adapt to different screen sizes and devices.</li>
+                                </ul>
+                            </p>
+
+                            <div class="d-flex flex-row mt-4 social">
+                                <b-button class="">
+                                    <span>
+                                        <i class="fas fa-code mx-2"></i>
+                                        Repository
+                                    </span>
+                                </b-button>
+
+                                <b-button class="mx-3">
+                                    <span>
+                                        <i class="fas fa-external-link-alt mx-2"></i>
+                                        View
+                                    </span>
+                                </b-button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-12 col-xl-4 mb-5">
+                        <img src="/assets/portfolio/spotify-visualizer.png" class="" width="100%" style="border-radius: 20px; transform: rotate(-1deg)" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 card-item">
+                <div class="row mx-0 align-items-center justify-content-between project-item">
                     <div class="col-12 col-lg-12 col-xl-4 mb-5">
                         <img src="/assets/portfolio/bookstore.png" class="" width="100%" style="border-radius: 20px; transform: rotate(-1deg)" alt="">
                     </div>
