@@ -42,13 +42,26 @@ button {
     font-weight: 700 !important;
     text-transform: uppercase !important;
     border-radius: 0px !important;
-    transition: 0.3s all !important;
 }
 
 button:hover {
     background: #FF2C1F !important;
     color: #fff !important;
-    translate: -3px -3px;
+}
+
+.hover {
+    transition: 0.3s all !important;
+    text-transform: uppercase !important;
+    font-weight: 700 !important;
+    font-size: 0.875rem !important;
+}
+
+button:hover .hover {
+    translate: -0.25rem -0.25rem !important;
+}
+
+.border-laravel {
+    border: 1px solid #FF2C1F;
 }
 
 .border-left {
@@ -67,7 +80,7 @@ button:hover {
 }
 
 @media screen and (max-width: 995px) {
-    button {
+    button, .hover {
         background: #FF2C1F !important;
         color: #fff !important;
     }
@@ -75,4 +88,32 @@ button:hover {
 
 .box-shadow {
     box-shadow: 0px 0px 15px 4px rgba(255, 44, 31, 0.1);
+}
+
+.font-size-sm {
+    font-size: 14px;
+}
+
+.font-size-xs {
+    font-size: 10px;
+}
+
+.font-size-custom {
+    font-size: 12px;
+}
+
+.font-size-md {
+    font-size: 16px;
+}
+
+.font-size-lg {
+    font-size: 18px;
+}
+
+.font-size-xl {
+    font-size: 22px;
+}
+
+.font-weight-bold {
+    font-weight: 700;
 }

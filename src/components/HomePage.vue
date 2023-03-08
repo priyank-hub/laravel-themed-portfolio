@@ -9,19 +9,23 @@
           <div class="greeting">I'm a Full Stack Web Developer.</div>
 
           <div class="d-flex flex-row mt-4 social">
-            <b-button class="bg-laravel text-white">
-              <span>
-                <i class="fab fa-linkedin mx-2"></i>
-                LinkedIn
-              </span>
-            </b-button>
+            <a href="" class="border-laravel text-decoration-none text-white mx-2">
+              <div class="hover bg-laravel p-2">
+                <i class="fab fa-linkedin"></i>
+                <span class="mx-2">
+                  LinkedIn
+                </span>
+              </div>
+            </a>
 
-            <b-button class="mx-3">
-              <span>
-                <i class="fab fa-github mx-2"></i>
-                Github
-              </span>
-            </b-button>
+            <a href="" class="border-laravel text-decoration-none text-white mx-2">
+              <div class="hover bg-laravel p-2">
+                <i class="fab fa-github"></i>
+                <span class="mx-2">
+                  Github
+                </span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -51,8 +55,9 @@ li {
   display: inline-block;
   margin: 0 10px;
 }
-a {
-  color: #42b983;
+
+a:hover .hover {
+  translate: -0.25rem -0.25rem !important;
 }
 
 .homepage {
