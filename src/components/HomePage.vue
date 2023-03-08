@@ -10,7 +10,7 @@
 
           <div class="d-flex flex-row mt-4 social">
             <a href="" class="border-laravel text-decoration-none text-white mx-2">
-              <div class="hover bg-laravel p-2">
+              <div class="hover bg-laravel p-2 px-3">
                 <i class="fab fa-linkedin"></i>
                 <span class="mx-2">
                   LinkedIn
@@ -19,7 +19,7 @@
             </a>
 
             <a href="" class="border-laravel text-decoration-none text-white mx-2">
-              <div class="hover bg-laravel p-2">
+              <div class="hover bg-laravel p-2 px-3">
                 <i class="fab fa-github"></i>
                 <span class="mx-2">
                   Github

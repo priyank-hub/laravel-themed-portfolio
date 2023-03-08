@@ -9,19 +9,19 @@
             </span>
         </h1>
 
-        <div class="my-5">
+        <div class="my-5 text-left">
             <div class="form-group">
-                <label for="" class="font-size-xs text-laravel">Name</label>
+                <label for="" class="font-size-sm text-laravel">Name</label>
                 <b-form-input class="" style="font-size-15px" v-model="form.name"></b-form-input>
             </div>
 
             <div class="form-group">
-                <label for="" class="font-size-xs text-laravel">Name</label>
+                <label for="" class="font-size-sm text-laravel">Email</label>
                 <b-form-input class="" style="font-size-15px" v-model="form.name"></b-form-input>
             </div>
 
             <div class="form-group">
-                <label for="" class="font-size-xs text-laravel">Name</label>
+                <label for="" class="font-size-sm text-laravel">Message</label>
                 <b-form-input class="" style="font-size-15px" v-model="form.name"></b-form-input>
             </div>
 
