@@ -169,7 +169,7 @@
                                     </div>
                                 </a>
 
-                                <a href="" class="border-laravel text-decoration-none text-white mx-2">
+                                <a href="https://nft-preview-card-five-hazel.vercel.app/" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
                                     <div class="hover bg-laravel p-2 px-3">
                                         <i class="fas fa-external-link-alt"></i>
                                         <span class="mx-2">
@@ -202,7 +202,7 @@
                                     </div>
                                 </a>
 
-                                <a href="" class="border-laravel text-decoration-none text-white mx-2">
+                                <a href="https://e-commerce-product-page-g39t.vercel.app/" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
                                     <div class="hover bg-laravel p-2 px-3">
                                         <i class="fas fa-external-link-alt"></i>
                                         <span class="mx-2">
@@ -235,7 +235,7 @@
                                     </div>
                                 </a>
 
-                                <a href="" class="border-laravel text-decoration-none text-white mx-2">
+                                <a href="https://rest-countries-api-jade-iota.vercel.app/#/" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
                                     <div class="hover bg-laravel p-2 px-3">
                                         <i class="fas fa-external-link-alt"></i>
                                         <span class="mx-2">
