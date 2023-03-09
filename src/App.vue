@@ -1,6 +1,13 @@
 <template>
   <div id="app">
-    <div class="bg-light-grey nav-bar">
+    <div class="" style="position: fixed; top: 80px; right: 20px">
+      <span class="cursor-pointer">
+        <i v-if="mode == 'dark'" class="fas fa-sun text-white" @click="switchMode('light')"></i>
+        <i v-else-if="mode == 'light'" class="fas fa-moon" @click="switchMode('dark')"></i>
+      </span>
+    </div>
+
+    <div class="nav-bar" :class="mode == 'dark' ? 'bg-dark-grey' : 'bg-light-grey'">
       <div class="container-fluid pt-3" :class="isVisible ? '' : 'pb-3'">
         <nav class="desktop">
           <h3 class="mb-0 text-laravel brand">
@@ -9,8 +16,8 @@
             </a>
           </h3>
           <ul class="nav-links mb-0">
-            <li v-for="item in menu" :key="item" class="menu">
-              <a :href="item.url" class="text-black menu-item">
+            <li v-for="(item, index) in menu" :key="index" class="menu">
+              <a :href="item.url" class="menu-item" :class="mode == 'dark' ? 'text-white' : 'text-black'">
                 {{ item.name }}
               </a>
             </li>
@@ -25,7 +32,7 @@
               </a>
             </h3>
           </div>
-          <div class="col text-right" v-b-toggle.my-collapse>
+          <div class="col text-right" :class="mode == 'dark' ? 'text-white' : 'text-black'" v-b-toggle.my-collapse>
             <i class="fas fa-bars" v-if="! isVisible"></i>
             <i class="fas fa-times" v-if="isVisible"></i>
           </div>
@@ -34,8 +41,8 @@
         <b-collapse id="my-collapse" v-model="isVisible">
           <div class="pt-3">
             <ul class="p-0 mb-0">
-              <li v-for="item in menu" :key="item" class="m-0 py-2 border-bottom text-black" style="font-weight: 300; list-style-type: none; text-align: left">
-                <a :href="item.url" class="menu-item text-black font-size-sm" @click="isVisible = false">
+              <li v-for="(item, index) in menu" :key="index" class="m-0 py-2 border-bottom text-black" style="font-weight: 300; list-style-type: none; text-align: left">
+                <a :href="item.url" class="menu-item font-size-sm" :class="mode == 'dark' ? 'text-white' : 'text-black'" @click="isVisible = false">
                   {{ item.name }}
                 </a>
               </li>
@@ -47,23 +54,23 @@
 
     <div class="main">
       <section id="home">
-        <HomePage msg=""/>
+        <HomePage :mode="mode"/>
       </section>
 
       <section id="portfolio" style="padding-top: 90px">
-        <Portfolio />
+        <Portfolio :mode="mode"/>
       </section>
 
       <section id="about-me" style="padding-top: 90px">
-        <AboutMe />
+        <AboutMe :mode="mode"/>
       </section>
 
       <section id="resume" style="padding-top: 90px">
-        <ResumeSection />
+        <ResumeSection :mode="mode"/>
       </section>
 
       <section id="contact" style="padding-top: 90px">
-        <Contact />
+        <Contact :mode="mode"/>
       </section>
     </div>
 
@@ -73,19 +80,25 @@
         <div>
           <ul class="p-0 mb-0">
             <li>
-              <span class="icon">
-                <i class="fab fa-linkedin"></i>
-              </span>
+              <a href="https://github.com/priyank-hub" target="_blank">
+                <span class="icon" :class="mode == 'dark' ? 'text-laravel' : 'text-black'">
+                  <i class="fab fa-github"></i>
+                </span>
+              </a>
             </li>
             <li>
-              <span class="icon">
-                <i class="fab fa-github"></i>
-              </span>
+              <a href="https://www.linkedin.com/in/priyank9/" target="_blank">
+                <span class="icon" :class="mode == 'dark' ? 'text-laravel' : 'text-black'">
+                  <i class="fab fa-linkedin"></i>
+                </span>
+              </a>
             </li>
             <li>
-              <span class="icon">
-                <i class="fab fa-instagram"></i>
-              </span>
+              <a href="https://twitter.com/p1ku99" target="_blank">
+                <span class="icon" :class="mode == 'dark' ? 'text-laravel' : 'text-black'">
+                  <i class="fab fa-twitter"></i>
+                </span>
+              </a>
             </li>
           </ul>
         </div>
@@ -106,6 +119,47 @@
           <div class="line"></div>
         </div>
       </div>
+    </div>
+
+    <div class="">
+      <footer>
+        <div class="d-md-none">
+          <div class="row mx-0 justify-content-center align-items-center p-3">
+            <div class="col">
+              <a href="https://github.com/priyank-hub" target="_blank">
+                <span class="icon">
+                  <i class="fab fa-github" :class="mode == 'dark' ? 'text-white' : 'text-black'"></i>
+                </span>
+              </a>
+            </div>
+            <div class="col">
+              <a href="https://www.linkedin.com/in/priyank9/" target="_blank">
+                <span class="icon">
+                  <i class="fab fa-linkedin" :class="mode == 'dark' ? 'text-white' : 'text-black'"></i>
+                </span>
+              </a>
+            </div>
+            <div class="col">
+              <a href="https://twitter.com/p1ku99" target="_blank">
+                <span class="icon">
+                  <i class="fab fa-twitter" :class="mode == 'dark' ? 'text-white' : 'text-black'"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="my-3 text-center">
+          <span class="text-muted font-size-sm">
+            Design & Built by <span class="text-laravel"> Priyank Patel</span>
+          </span>
+          <br>
+          <span class="text-muted font-size-sm d-md-none">
+            patelpriyank177@gmail.com
+          </span>
+        </div>
+      </footer>
     </div>
   </div>
 </template>
@@ -147,12 +201,26 @@ export default {
           name: 'Contact',
           url: '#contact',
         }
-      ]
+      ],
+      mode: 'light',
     }
   },
 
   computed: {
 
+  },
+  methods: {
+    switchMode(mode) {
+      this.mode = mode;
+
+      if (mode == 'dark') {
+        // var body = document.getElementsByTagName("BODY")[0];
+        document.body.style.backgroundColor = '#171923'
+      }
+      else if (mode == 'light') {
+        document.body.style.backgroundColor = 'transparent'
+      }
+    }
   }
 }
 </script>
@@ -177,6 +245,10 @@ export default {
 
 .main {
   margin: 0px 10vw;
+}
+
+.bg-dark-grey {
+  background: #13141D;
 }
 
 
@@ -278,7 +350,6 @@ nav {
 
 .icon {
   font-size: 25px;
-  color: black;
   transition: 0.3s all;
 }
 

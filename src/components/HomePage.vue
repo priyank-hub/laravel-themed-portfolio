@@ -4,12 +4,12 @@
       <div class="gradient"></div>
       <div class="row justify-content-start align-items-center homepage">
         <div class="text-left title">
-          <div class="greeting">Hello! My name is</div>
+          <div class="greeting" :class="mode == 'dark' ? 'text-white' : 'text-black'">Hello! My name is</div>
           <div class="name">Priyank Patel.</div>
-          <div class="greeting">I'm a Full Stack Web Developer.</div>
+          <div class="greeting" :class="mode == 'dark' ? 'text-white' : 'text-black'">I'm a Full Stack Web Developer.</div>
 
           <div class="d-flex flex-row mt-4 social">
-            <a href="" class="border-laravel text-decoration-none text-white mx-2">
+            <a href="https://www.linkedin.com/in/priyank9/" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
               <div class="hover bg-laravel p-2 px-3">
                 <i class="fab fa-linkedin"></i>
                 <span class="mx-2">
@@ -18,7 +18,7 @@
               </div>
             </a>
 
-            <a href="" class="border-laravel text-decoration-none text-white mx-2">
+            <a href="https://github.com/priyank-hub" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
               <div class="hover bg-laravel p-2 px-3">
                 <i class="fab fa-github"></i>
                 <span class="mx-2">
@@ -37,7 +37,7 @@
 export default {
   name: 'HomePage',
   props: {
-    msg: String
+    mode: String
   }
 }
 </script>
@@ -82,7 +82,6 @@ a:hover .hover {
 
   .greeting {
     font-size: 1.5rem !important;
-    color: black;
     font-weight: 600;
   }
 
@@ -103,7 +102,6 @@ a:hover .hover {
 
 .greeting {
   font-size: 3.5rem;
-  color: black;
   font-weight: 700;
 }
 

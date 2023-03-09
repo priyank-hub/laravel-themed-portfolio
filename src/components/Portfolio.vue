@@ -5,7 +5,7 @@
     <div class="container">
         <div class="d-flex flex-row align-items-center mx-0">
             <div class="font-size-xl text-left font-weight-bold">
-                <span class="text-black">
+                <span class="" :class="mode == 'dark' ? 'text-white' : 'text-black'">
                     Some Things I've Built
                 </span>
             </div>
@@ -17,7 +17,7 @@
                 <div class="row mx-0 align-items-center justify-content-between project-item">
                     <div class="col-12 col-xl-6 text-left px-0">
                         <!-- content -->
-                        <h3 class="text-black fw-bold">Spotify Data Visualizer</h3>
+                        <h3 class="fw-bold" :class="mode == 'dark' ? 'text-white' : 'text-black'">Spotify Data Visualizer</h3>
                         <div class="text-muted">
                             <p>
                                 To visualize Spotify data on the web, including playlists, top artists, top tracks, and track information. 
@@ -33,20 +33,20 @@
                             </p>
 
                             <div class="d-flex flex-row mt-4 social">
-                                <a href="" class="border-laravel text-decoration-none text-white mx-2">
+                                <a href="https://github.com/priyank-hub/spotify-profile-frontend" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
                                     <div class="hover bg-laravel p-2 px-3">
-                                        <i class="fab fa-linkedin"></i>
+                                        <i class="fas fa-code"></i>
                                         <span class="mx-2">
-                                            LinkedIn
+                                            Repository
                                         </span>
                                     </div>
                                 </a>
 
-                                <a href="" class="border-laravel text-decoration-none text-white mx-2">
+                                <a href="https://spotify-profile-frontend.vercel.app/" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
                                     <div class="hover bg-laravel p-2 px-3">
-                                        <i class="fab fa-github"></i>
+                                        <i class="fas fa-external-link-alt"></i>
                                         <span class="mx-2">
-                                        Github
+                                            View
                                         </span>
                                     </div>
                                 </a>
@@ -67,7 +67,7 @@
                     </div>
                     <div class="col-12 col-xl-6 text-left">
                         <!-- content -->
-                        <h3 class="text-black fw-bold">E-Commerce Bookstore Project</h3>
+                        <h3 class="fw-bold" :class="mode == 'dark' ? 'text-white' : 'text-black'">E-Commerce Bookstore Project</h3>
                         <div class="text-muted">
                             <p>
                                 Project is about Mom&Pop book store by Brick and Mortar Company, which allows users to browse, search for available books and as well as provide checkout and payment functionality.
@@ -82,20 +82,20 @@
                             </p>
 
                             <div class="d-flex flex-row mt-4 social">
-                                <a href="" class="border-laravel text-decoration-none text-white mx-2">
+                                <a href="https://github.com/priyank-hub/Charizard-4413-FrontEnd" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
                                     <div class="hover bg-laravel p-2 px-3">
-                                        <i class="fab fa-linkedin"></i>
+                                        <i class="fas fa-code"></i>
                                         <span class="mx-2">
-                                            LinkedIn
+                                            Repository
                                         </span>
                                     </div>
                                 </a>
 
-                                <a href="" class="border-laravel text-decoration-none text-white mx-2">
+                                <a href="https://charizard-4413-front-end-charizard4413.vercel.app/" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
                                     <div class="hover bg-laravel p-2 px-3">
-                                        <i class="fab fa-github"></i>
+                                        <i class="fas fa-external-link-alt"></i>
                                         <span class="mx-2">
-                                        Github
+                                            View
                                         </span>
                                     </div>
                                 </a>
@@ -108,7 +108,7 @@
             <div class="col-12 card-item px-0">
                 <div class="row mx-0 align-items-center justify-content-between project-item">
                     <div class="col-12 col-xl-6 text-left px-0">
-                        <h3 class="text-black fw-bold">Weather Info</h3>
+                        <h3 class="fw-bold" :class="mode == 'dark' ? 'text-white' : 'text-black'">Weather Info</h3>
                         <div class="text-muted">
                             <p>
                                 Weather Info is a 
@@ -119,20 +119,20 @@
                             </p>
 
                             <div class="d-flex flex-row mt-4 social">
-                                <a href="" class="border-laravel text-decoration-none text-white mx-2">
+                                <a href="https://github.com/priyank-hub/weatherinfo" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
                                     <div class="hover bg-laravel p-2 px-3">
-                                        <i class="fab fa-linkedin"></i>
+                                        <i class="fas fa-code"></i>
                                         <span class="mx-2">
-                                            LinkedIn
+                                            Repository
                                         </span>
                                     </div>
                                 </a>
 
-                                <a href="" class="border-laravel text-decoration-none text-white mx-2">
+                                <a href="https://priyank-hub.github.io/weatherinfo/event.html" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
                                     <div class="hover bg-laravel p-2 px-3">
-                                        <i class="fab fa-github"></i>
+                                        <i class="fas fa-external-link-alt"></i>
                                         <span class="mx-2">
-                                        Github
+                                            View
                                         </span>
                                     </div>
                                 </a>
@@ -147,20 +147,20 @@
 
             <div class="col-12 card-item px-0">
                 <div class="row justify-content-between d-flex">
-                    <div class="col-12 col-lg-6 col-xl-4 mb-4 ui-item">
+                    <div class="col-12 col-lg-6 col-xl-4 mb-4">
                         <div class="border-0 box-shadow p-3" style=" border-radius: 15px">
                             <div class="image">
                                 <img src="/assets/portfolio/nft.png" width="100%" style="border-radius: 5px; height: 250px; object-fit: cover" alt="">
                             </div>
                             <div class="content mt-5">
-                                <h4 class="text-black fw-bold">NFT Preview Card</h4>
+                                <h4 class="fw-bold" :class="mode == 'dark' ? 'text-white' : 'text-black'">NFT Preview Card</h4>
                                 <div class="text-muted subtitle">
                                     UI Component
                                 </div>
                             </div>
 
                             <div class="d-flex flex-row mt-4 social">
-                                <a href="" class="border-laravel text-decoration-none text-white mx-2">
+                                <a href="https://github.com/priyank-hub/nft-preview-card" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
                                     <div class="hover bg-laravel p-2 px-3">
                                         <i class="fas fa-code"></i>
                                         <span class="mx-2">
@@ -187,13 +187,13 @@
                                 <img src="/assets/portfolio/products-page.png" width="100%" style="border-radius: 5px; height: 250px; object-fit: cover" alt="">
                             </div>
                             <div class="content mt-5">
-                                <h4 class="text-black fw-bold">Products Page</h4>
+                                <h4 class="fw-bold" :class="mode == 'dark' ? 'text-white' : 'text-black'">Products Page</h4>
                                 <div class="text-muted subtitle">
                                     UI Component
                                 </div>
                             </div>
                             <div class="d-flex flex-row mt-4 social">
-                                <a href="" class="border-laravel text-decoration-none text-white mx-2">
+                                <a href="https://github.com/priyank-hub/e-commerce-product-page" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
                                     <div class="hover bg-laravel p-2 px-3">
                                         <i class="fas fa-code"></i>
                                         <span class="mx-2">
@@ -220,13 +220,13 @@
                                 <img src="/assets/portfolio/countries.png" width="100%" style="border-radius: 5px; height: 250px; object-fit: cover" alt="">
                             </div>
                             <div class="content mt-5">
-                                <h4 class="text-black fw-bold">Countries Info</h4>
+                                <h4 class="fw-bold" :class="mode == 'dark' ? 'text-white' : 'text-black'">Countries Info</h4>
                                 <div class="text-muted subtitle">
                                     UI Component
                                 </div>
                             </div>
                             <div class="d-flex flex-row mt-4 social">
-                                <a href="" class="border-laravel text-decoration-none text-white mx-2">
+                                <a href="https://github.com/priyank-hub/REST_countries_API" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
                                     <div class="hover bg-laravel p-2 px-3">
                                         <i class="fas fa-code"></i>
                                         <span class="mx-2">
@@ -255,9 +255,9 @@
 
 <script>
 export default {
-  name: 'HomePage',
+  name: 'Portfolio',
   props: {
-    msg: String
+    mode: String
   },
   data() {
     return {

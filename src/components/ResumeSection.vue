@@ -3,7 +3,7 @@
     <div class="">
       <div class="d-flex flex-row align-items-center mx-0 px-3">
           <div class="font-size-xl text-left font-weight-bold">
-              <span class="text-black">
+              <span class="" :class="mode == 'dark' ? 'text-white' : 'text-black'">
                   Resume
               </span>
           </div>
@@ -39,7 +39,7 @@
 <script>
 export default {
   props: {
-    
+    mode: String,
   }
 }
 </script>

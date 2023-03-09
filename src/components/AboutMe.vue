@@ -2,7 +2,7 @@
   <div class="">
     <div class="d-flex flex-row align-items-center mx-0 px-3">
         <div class="font-size-xl text-left font-weight-bold">
-            <span class="text-black">
+            <span class="" :class="mode == 'dark' ? 'text-white' : 'text-black'">
                 About Me
             </span>
         </div>
@@ -12,7 +12,7 @@
     <div class="container my-4 text-left about">
         <div class="row align-itmes-center">
             <div class="col-12 col-lg-12">
-                <p class="">
+                <p class="text-muted">
                     Hello, my name is Priyank Patel, and I'm a Full Stack web developer with <span class="text-laravel"> 2 Years </span> of experience. 
                     I have a Bachelor's degree in <span class="text-laravel"> Computer Science </span> from <span class="text-laravel">York University</span> in Toronto, Canada. 
                     I'm always eager to learn new programming languages and enjoy the challenge of building solutions that meet my clients' needs. 
@@ -28,13 +28,13 @@
         <div class="container my-5 position-relative">
             <div class="bar m-auto mb-4"></div>
             <div class="mb-3">
-                <h5 class="text-center font-weight-light">Technologies I've worked with</h5>
+                <h5 class="text-center font-weight-light" :class="mode == 'dark' ? 'text-white' : 'text-black'">Technologies I've worked with</h5>
             </div>
             <div class="mx-0 skill-grid text-center">
-                <div class="my-4 skill-item" v-for="item in skills" :key="item">
+                <div class="my-4 skill-item" v-for="(item, index) in skills" :key="index">
                     <a :href="item.website" target="_blank">
                         <img :src="item.url" height="55px" style="object-fit: cover" alt="">
-                        <div class="subtitle text-muted mt-3">
+                        <div class="subtitle mt-3" :class="mode == 'dark' ? 'text-white' : 'text-black'">
                             {{ item.name }}
                         </div>
                     </a>
@@ -48,9 +48,9 @@
 
 <script>
 export default {
-  name: 'HomePage',
+  name: 'AboutMe',
   props: {
-    msg: String
+    mode: String
   },
   data() {
     return {

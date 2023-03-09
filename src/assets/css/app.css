@@ -30,12 +30,21 @@ body {
     color: black;
 }
 
+.text-black {
+    color: #fff;
+}
+
+
 .font-weight-bold {
     font-weight: 600;
 }
 
 .font-weight-light {
     font-weight: 300;
+}
+
+.cursor-pointer {
+    cursor: pointer;
 }
 
 
