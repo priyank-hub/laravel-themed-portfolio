@@ -1,11 +1,6 @@
 <template>
   <div id="app">
     <div class="" style="position: fixed; top: 80px; right: 20px">
-      <!-- <span class="cursor-pointer">
-        <i v-if="mode == 'dark'" class="fas fa-sun text-white" @click="switchMode('light')"></i>
-        <i v-else-if="mode == 'light'" class="fas fa-moon" @click="switchMode('dark')"></i>
-      </span> -->
-
       <label for="night-light-checkbox" class="night-light-label" :class="mode == 'dark' ? 'bg-black' : 'bg-white'">
         <input type="checkbox" id="night-light-checkbox">
         <span class="night-light-ball"></span>
