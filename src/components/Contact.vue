@@ -1,7 +1,7 @@
 <template>
   <div class="row mx-0 justify-content-center align-items-center" style="min-height: 100vh">
     <div>
-        <div class="d-flex flex-row align-items-center mx-0 px-3">
+        <div class="d-flex flex-row align-items-center mx-0 px-3 reveal">
             <div class="font-size-xl text-left font-weight-bold">
                 <span class="" :class="mode == 'dark' ? 'text-white' : 'text-black'">
                     Get In Touch
@@ -13,28 +13,28 @@
         <div class="container my-5 text-left">
             <div class="row mx-0 justify-content-center">
                 <div class="col-12 col-lg-6">
-                    <div class="mb-4">
+                    <div class="mb-4 reveal">
                         <label for="" class="font-size-sm text-laravel">Name</label>
                         <div class="mt-2">
                             <input class="w-100" style="font-size-15px" v-model="form.name">
                         </div>
                     </div>
 
-                    <div class="form-group mb-4">
+                    <div class="form-group mb-4 reveal">
                         <label for="" class="font-size-sm text-laravel">Email</label>
                         <div class="mt-2">
                             <input class="w-100" style="font-size-15px" v-model="form.email">
                         </div>
                     </div>
 
-                    <div class="form-group mb-4">
+                    <div class="form-group mb-4 reveal">
                         <label for="" class="font-size-sm text-laravel">Message</label>
                         <div class="mt-2">
                             <textarea name="" class="w-100" id="" rows="3" style="font-size-15px" v-model="form.message"></textarea>
                         </div>
                     </div>
 
-                    <div class="d-flex flex-row">
+                    <div class="d-flex flex-row reveal">
                         <a href="" class="text-decoration-none text-white" style="border: 1px solid #FF2C1F">
                             <div class="hover bg-laravel p-2 px-3">
                                 <i class="fas fa-paper-plane"></i>

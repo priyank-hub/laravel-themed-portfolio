@@ -3,7 +3,7 @@
     <!-- <h1 class="font-weight-bold">Portfolio</h1> -->
 
     <div class="container">
-        <div class="d-flex flex-row align-items-center mx-0">
+        <div class="d-flex flex-row align-items-center mx-0 reveal">
             <div class="font-size-xl text-left font-weight-bold">
                 <span class="" :class="mode == 'dark' ? 'text-white' : 'text-black'">
                     Some Things I've Built
@@ -13,7 +13,7 @@
         </div>
 
         <div class="row mx-0">
-            <div class="col-12 card-item px-0">
+            <div class="col-12 card-item px-0 reveal">
                 <div class="row mx-0 align-items-center justify-content-between project-item">
                     <div class="col-12 col-xl-6 text-left px-0">
                         <!-- content -->
@@ -60,7 +60,7 @@
                 </div>
             </div>
 
-            <div class="col-12 card-item px-0">
+            <div class="col-12 card-item px-0 reveal">
                 <div class="row mx-0 align-items-center justify-content-between project-item">
                     <div class="col-12 col-xl-5 mb-5 d-md-none d-xl-block px-0">
                         <img src="/assets/portfolio/bookstore.png" class="" width="100%" style="border-radius: 20px; transform: rotate(-1deg)" alt="">
@@ -105,7 +105,7 @@
                 </div>
             </div>
 
-            <div class="col-12 card-item px-0">
+            <div class="col-12 card-item px-0 reveal">
                 <div class="row mx-0 align-items-center justify-content-between project-item">
                     <div class="col-12 col-xl-6 text-left px-0">
                         <h3 class="fw-bold" :class="mode == 'dark' ? 'text-white' : 'text-black'">Weather Info</h3>
@@ -147,7 +147,7 @@
 
             <div class="col-12 card-item px-0">
                 <div class="row justify-content-between d-flex">
-                    <div class="col-12 col-lg-6 col-xl-4 mb-4">
+                    <div class="col-12 col-lg-6 col-xl-4 mb-4 reveal">
                         <div class="border-0 box-shadow p-3" style=" border-radius: 15px">
                             <div class="image">
                                 <img src="/assets/portfolio/nft.png" width="100%" style="border-radius: 5px; height: 250px; object-fit: cover" alt="">
@@ -181,7 +181,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-lg-6 col-xl-4 mb-4 ui-item">
+                    <div class="col-12 col-lg-6 col-xl-4 mb-4 ui-item reveal">
                         <div class="border-0 box-shadow p-3" style=" border-radius: 15px">
                             <div class="image">
                                 <img src="/assets/portfolio/products-page.png" width="100%" style="border-radius: 5px; height: 250px; object-fit: cover" alt="">
@@ -214,7 +214,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-lg-6 col-xl-4 mb-4 ui-item">
+                    <div class="col-12 col-lg-6 col-xl-4 mb-4 ui-item reveal">
                         <div class="border-0 box-shadow p-3" style=" border-radius: 15px">
                             <div class="image">
                                 <img src="/assets/portfolio/countries.png" width="100%" style="border-radius: 5px; height: 250px; object-fit: cover" alt="">

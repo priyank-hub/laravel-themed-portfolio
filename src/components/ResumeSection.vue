@@ -1,7 +1,7 @@
 <template>
   <div class="row mx-0 justify-content-center align-items-center" style="min-height: 80vh">
     <div class="">
-      <div class="d-flex flex-row align-items-center mx-0 px-3">
+      <div class="d-flex flex-row align-items-center mx-0 px-3 reveal">
           <div class="font-size-xl text-left font-weight-bold">
               <span class="" :class="mode == 'dark' ? 'text-white' : 'text-black'">
                   Resume
@@ -12,7 +12,7 @@
 
       <div class="container my-5">
         <div class="d-flex flex-row justify-content-start">
-          <a href="" class="border-laravel text-decoration-none text-white mx-2">
+          <a href="" class="border-laravel text-decoration-none text-white mx-2 reveal">
             <div class="hover bg-laravel p-2 px-3">
               <i class="fas fa-eye"></i>
               <span class="mx-2">
@@ -21,7 +21,7 @@
             </div>
           </a>
 
-          <a href="" class="border-laravel text-decoration-none text-white mx-2">
+          <a href="" class="border-laravel text-decoration-none text-white mx-2 reveal">
             <div class="hover bg-laravel p-2 px-3">
               <i class="fas fa-download"></i>
               <span class="mx-2">

@@ -131,3 +131,15 @@ button:hover .hover {
 .font-weight-bold {
     font-weight: 700;
 }
+
+.reveal{
+    position: relative;
+    transform: translateY(90px);
+    opacity: 0;
+    transition: 0.5s all ease;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}

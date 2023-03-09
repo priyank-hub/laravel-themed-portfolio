@@ -87,21 +87,21 @@
       <div class="links d-flex flex-column align-items-center justify-content-center">
         <div>
           <ul class="p-0 mb-0">
-            <li>
+            <li class="">
               <a href="https://github.com/priyank-hub" target="_blank">
                 <span class="icon" :class="mode == 'dark' ? 'text-laravel' : 'text-black'">
                   <i class="fab fa-github"></i>
                 </span>
               </a>
             </li>
-            <li>
+            <li class="">
               <a href="https://www.linkedin.com/in/priyank9/" target="_blank">
                 <span class="icon" :class="mode == 'dark' ? 'text-laravel' : 'text-black'">
                   <i class="fab fa-linkedin"></i>
                 </span>
               </a>
             </li>
-            <li>
+            <li class="">
               <a href="https://twitter.com/p1ku99" target="_blank">
                 <span class="icon" :class="mode == 'dark' ? 'text-laravel' : 'text-black'">
                   <i class="fab fa-twitter"></i>
@@ -130,7 +130,7 @@
     </div>
 
     <div class="">
-      <footer>
+      <footer class="">
         <div class="d-md-none">
           <div class="row mx-0 justify-content-center align-items-center p-3">
             <div class="col">
@@ -239,10 +239,20 @@ export default {
       }
     })
 
-    // if (localStorage.getItem('animate-css')) {
-    //   document.body.className = 'dark';
-    //   darkCheck.checked = true;
-    // }
+    window.addEventListener("scroll", () => {
+      var reveals = document.querySelectorAll(".reveal");
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 70;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    });
   },
 
   methods: {
@@ -256,6 +266,7 @@ export default {
       }
       return t ? t : 'light';
     },
+
     getCheckMode() {
       let t = localStorage.getItem('mode');
 
@@ -267,7 +278,11 @@ export default {
       }
 
       return true;
-    }
+    },
+
+    reveal() {
+      
+    },
   }
 }
 </script>
@@ -287,6 +302,10 @@ export default {
 
 .fill-black {
   fill: black;
+}
+
+.bg-black {
+  background: black;
 }
 
 .night-light-label {
