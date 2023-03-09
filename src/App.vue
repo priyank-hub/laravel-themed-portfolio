@@ -32,10 +32,10 @@
         </div>
 
         <b-collapse id="my-collapse" v-model="isVisible">
-          <div class="py-3">
-            <ul class="p-0">
-              <li v-for="item in menu" :key="item" class="m-0 py-2 border-bottom text-black" style="font-weight: 600; list-style-type: none; text-align: left">
-                <a :href="item.url" class="menu-item text-black" @click="isVisible = false">
+          <div class="pt-3">
+            <ul class="p-0 mb-0">
+              <li v-for="item in menu" :key="item" class="m-0 py-2 border-bottom text-black" style="font-weight: 300; list-style-type: none; text-align: left">
+                <a :href="item.url" class="menu-item text-black font-size-sm" @click="isVisible = false">
                   {{ item.name }}
                 </a>
               </li>
@@ -45,25 +45,68 @@
       </div>
     </div>
 
-    <section id="home">
-      <HomePage msg="Welcome to Your Vue.js App"/>
-    </section>
+    <div class="main">
+      <section id="home">
+        <HomePage msg=""/>
+      </section>
 
-    <section id="portfolio" style="padding-top: 90px">
-      <Portfolio />
-    </section>
+      <section id="portfolio" style="padding-top: 90px">
+        <Portfolio />
+      </section>
 
-    <section id="about-me" style="padding-top: 90px">
-      <AboutMe />
-    </section>
+      <section id="about-me" style="padding-top: 90px">
+        <AboutMe />
+      </section>
 
-    <section id="resume" style="padding-top: 90px">
-      <ResumeSection />
-    </section>
+      <section id="resume" style="padding-top: 90px">
+        <ResumeSection />
+      </section>
 
-    <section id="contact" style="padding-top: 90px">
-      <Contact />
-    </section>
+      <section id="contact" style="padding-top: 90px">
+        <Contact />
+      </section>
+    </div>
+
+
+    <div class="d-none d-md-block">
+      <div class="links d-flex flex-column align-items-center justify-content-center">
+        <div>
+          <ul class="p-0 mb-0">
+            <li>
+              <span class="icon">
+                <i class="fab fa-linkedin"></i>
+              </span>
+            </li>
+            <li>
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+            </li>
+            <li>
+              <span class="icon">
+                <i class="fab fa-instagram"></i>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mt-3" style="height: 20vh">
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-none d-md-block">
+      <div class="links-inverse d-flex flex-column align-items-center justify-content-center">
+        <div class="text">
+          patelpriyank177@gmail.com
+        </div>
+
+        <div class="mt-3" style="height: 20vh">
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -132,14 +175,22 @@ export default {
   z-index: 10;
 }
 
+.main {
+  margin: 0px 10vw;
+}
 
-@media screen and (max-width: 995px) {
+
+@media screen and (max-width: 768px) {
   .desktop {
     display: none !important;
   }
 
   .mobile {
     display: flex !important;
+  }
+
+  .main {
+    margin: 0px;
   }
 }
 
@@ -195,5 +246,49 @@ nav {
   position: fixed; 
   width: 100%;
   z-index: 100;
+}
+
+.links {
+  position: fixed;
+  bottom: 20px;
+  left: 40px;
+}
+
+.links-inverse {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+}
+
+.links-inverse .text {
+  text-orientation: sideways-right;
+  writing-mode: vertical-rl;
+  letter-spacing: 2px;
+  color: #FF2C1F;
+}
+
+.links ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+.links li {
+  margin-bottom: 2vh;
+}
+
+.icon {
+  font-size: 25px;
+  color: black;
+  transition: 0.3s all;
+}
+
+.icon:hover {
+  color: #FF2C1F;
+}
+
+.line {
+  height: 100%;
+  width: 1px;
+  background: #FF2C1F;
 }
 </style>

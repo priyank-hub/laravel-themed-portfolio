@@ -3,7 +3,7 @@
     <div class="">  
         <h1 class="font-weight-bold">
             <span class="">
-                <span class="">
+                <span class="text-black">
                     About Me
                 </span>
             </span>

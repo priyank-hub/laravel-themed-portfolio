@@ -31,6 +31,7 @@
                             <p>
                                 To visualize Spotify data on the web, including playlists, top artists, top tracks, and track information. 
                                 Technologies used for this project are <span class="text-laravel">Node.js</span> for the backend, <span class="text-laravel">Vue.js</span> for the frontend, <span class="text-laravel">Bootstrap</span> for css, and various Spotify APIs for data retrieval.
+                            </p>
                             <p>
                                 Key features includes:
                                 <ul class="m-0">
@@ -41,32 +42,36 @@
                             </p>
 
                             <div class="d-flex flex-row mt-4 social">
-                                <b-button class="">
-                                    <span>
-                                        <i class="fas fa-code mx-2"></i>
-                                        Repository
-                                    </span>
-                                </b-button>
+                                <a href="" class="border-laravel text-decoration-none text-white mx-2">
+                                    <div class="hover bg-laravel p-2 px-3">
+                                        <i class="fab fa-linkedin"></i>
+                                        <span class="mx-2">
+                                            LinkedIn
+                                        </span>
+                                    </div>
+                                </a>
 
-                                <b-button class="mx-3">
-                                    <span>
-                                        <i class="fas fa-external-link-alt mx-2"></i>
-                                        View
-                                    </span>
-                                </b-button>
+                                <a href="" class="border-laravel text-decoration-none text-white mx-2">
+                                    <div class="hover bg-laravel p-2 px-3">
+                                        <i class="fab fa-github"></i>
+                                        <span class="mx-2">
+                                        Github
+                                        </span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-lg-12 col-xl-4 mb-5">
-                        <img src="/assets/portfolio/spotify-visualizer.png" class="" width="100%" style="border-radius: 20px; transform: rotate(-1deg)" alt="">
+                    <div class="col-12 col-lg-12 col-xl-5 mb-5 d-md-none d-xl-block">
+                        <img src="/assets/portfolio/spotify-3.png" class="" width="100%" style="border-radius: 15px; transform: rotate(1deg)" alt="">
                     </div>
                 </div>
             </div>
 
             <div class="col-12 card-item">
                 <div class="row mx-0 align-items-center justify-content-between project-item">
-                    <div class="col-12 col-lg-12 col-xl-4 mb-5">
+                    <div class="col-12 col-lg-12 col-xl-5 mb-5 d-md-none d-xl-block">
                         <img src="/assets/portfolio/bookstore.png" class="" width="100%" style="border-radius: 20px; transform: rotate(-1deg)" alt="">
                     </div>
                     <div class="col-12 col-lg-12 col-xl-6 text-left">
@@ -86,19 +91,23 @@
                             </p>
 
                             <div class="d-flex flex-row mt-4 social">
-                                <b-button class="">
-                                    <span>
-                                        <i class="fas fa-code mx-2"></i>
-                                        Repository
-                                    </span>
-                                </b-button>
+                                <a href="" class="border-laravel text-decoration-none text-white mx-2">
+                                    <div class="hover bg-laravel p-2 px-3">
+                                        <i class="fab fa-linkedin"></i>
+                                        <span class="mx-2">
+                                            LinkedIn
+                                        </span>
+                                    </div>
+                                </a>
 
-                                <b-button class="mx-3">
-                                    <span>
-                                        <i class="fas fa-external-link-alt mx-2"></i>
-                                        View
-                                    </span>
-                                </b-button>
+                                <a href="" class="border-laravel text-decoration-none text-white mx-2">
+                                    <div class="hover bg-laravel p-2 px-3">
+                                        <i class="fab fa-github"></i>
+                                        <span class="mx-2">
+                                        Github
+                                        </span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -119,32 +128,36 @@
                             </p>
 
                             <div class="d-flex flex-row mt-4 social">
-                                <b-button class="">
-                                    <span>
-                                        <i class="fas fa-code mx-2"></i>
-                                        Repository
-                                    </span>
-                                </b-button>
+                                <a href="" class="border-laravel text-decoration-none text-white mx-2">
+                                    <div class="hover bg-laravel p-2 px-3">
+                                        <i class="fab fa-linkedin"></i>
+                                        <span class="mx-2">
+                                            LinkedIn
+                                        </span>
+                                    </div>
+                                </a>
 
-                                <b-button class="mx-3">
-                                    <span>
-                                        <i class="fas fa-external-link-alt mx-2"></i>
-                                        View
-                                    </span>
-                                </b-button>
+                                <a href="" class="border-laravel text-decoration-none text-white mx-2">
+                                    <div class="hover bg-laravel p-2 px-3">
+                                        <i class="fab fa-github"></i>
+                                        <span class="mx-2">
+                                        Github
+                                        </span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-12 col-xl-5">
+                    <div class="col-12 col-lg-12 col-xl-5 d-md-none d-xl-block">
                         <img src="/assets/portfolio/weatherinfo.png" class="" width="100%" style="border-radius: 20px; transform: rotate(1deg)" alt="">
                     </div>
                 </div>
             </div>
 
             <div class="col-12 card-item">
-                <div class="row mx-0 justify-content-between">
+                <div class="row mx-0 justify-content-between d-flex">
                     <div class="col-12 col-lg-6 col-xl-4 mb-4 ui-item">
-                        <div class="card border-0 box-shadow p-3" style=" border-radius: 15px">
+                        <div class="border-0 box-shadow p-3" style=" border-radius: 15px">
                             <div class="image">
                                 <img src="/assets/portfolio/nft.png" width="100%" style="border-radius: 5px; height: 250px; object-fit: cover" alt="">
                             </div>
@@ -156,54 +169,62 @@
                             </div>
 
                             <div class="d-flex flex-row mt-4 social">
-                                <b-button class="">
-                                    <span>
-                                        <i class="fas fa-code mx-2"></i>
-                                        Repository
-                                    </span>
-                                </b-button>
+                                <a href="" class="border-laravel text-decoration-none text-white mx-2">
+                                    <div class="hover bg-laravel p-2 px-3">
+                                        <i class="fas fa-code"></i>
+                                        <span class="mx-2">
+                                            Repository
+                                        </span>
+                                    </div>
+                                </a>
 
-                                <b-button class="mx-3">
-                                    <span>
-                                        <i class="fas fa-external-link-alt mx-2"></i>
-                                        View
-                                    </span>
-                                </b-button>
+                                <a href="" class="border-laravel text-decoration-none text-white mx-2">
+                                    <div class="hover bg-laravel p-2 px-3">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <span class="mx-2">
+                                            View
+                                        </span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-12 col-lg-6 col-xl-4 mb-4 ui-item">
-                        <div class="card border-0 box-shadow p-3" style=" border-radius: 15px">
+                        <div class="border-0 box-shadow p-3" style=" border-radius: 15px">
                             <div class="image">
                                 <img src="/assets/portfolio/products-page.png" width="100%" style="border-radius: 5px; height: 250px; object-fit: cover" alt="">
                             </div>
                             <div class="content mt-5">
-                                <h4 class="text-black fw-bold">An E-commerce Products Page</h4>
+                                <h4 class="text-black fw-bold">Products Page</h4>
                                 <div class="text-muted subtitle">
                                     UI Component
                                 </div>
                             </div>
                             <div class="d-flex flex-row mt-4 social">
-                                <b-button class="">
-                                    <span>
-                                        <i class="fas fa-code mx-2"></i>
-                                        Repository
-                                    </span>
-                                </b-button>
+                                <a href="" class="border-laravel text-decoration-none text-white mx-2">
+                                    <div class="hover bg-laravel p-2 px-3">
+                                        <i class="fas fa-code"></i>
+                                        <span class="mx-2">
+                                            Repository
+                                        </span>
+                                    </div>
+                                </a>
 
-                                <b-button class="mx-3">
-                                    <span>
-                                        <i class="fas fa-external-link-alt mx-2"></i>
-                                        View
-                                    </span>
-                                </b-button>
+                                <a href="" class="border-laravel text-decoration-none text-white mx-2">
+                                    <div class="hover bg-laravel p-2 px-3">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <span class="mx-2">
+                                            View
+                                        </span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-12 col-lg-6 col-xl-4 mb-4 ui-item">
-                        <div class="card border-0 box-shadow p-3" style=" border-radius: 15px">
+                        <div class="border-0 box-shadow p-3" style=" border-radius: 15px">
                             <div class="image">
                                 <img src="/assets/portfolio/countries.png" width="100%" style="border-radius: 5px; height: 250px; object-fit: cover" alt="">
                             </div>
@@ -214,19 +235,23 @@
                                 </div>
                             </div>
                             <div class="d-flex flex-row mt-4 social">
-                                <b-button class="">
-                                    <span>
-                                        <i class="fas fa-code mx-2"></i>
-                                        Repository
-                                    </span>
-                                </b-button>
+                                <a href="" class="border-laravel text-decoration-none text-white mx-2">
+                                    <div class="hover bg-laravel p-2 px-3">
+                                        <i class="fas fa-code"></i>
+                                        <span class="mx-2">
+                                            Repository
+                                        </span>
+                                    </div>
+                                </a>
 
-                                <b-button class="mx-3">
-                                    <span>
-                                        <i class="fas fa-external-link-alt mx-2"></i>
-                                        View
-                                    </span>
-                                </b-button>
+                                <a href="" class="border-laravel text-decoration-none text-white mx-2">
+                                    <div class="hover bg-laravel p-2 px-3">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <span class="mx-2">
+                                            View
+                                        </span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -343,6 +368,10 @@ h3 {
     font-weight: 700;
 }
 
+a:hover .hover {
+  translate: -0.25rem -0.25rem !important;
+}
+
 .card-item {
     padding: 20px 0px 100px 0px;
 }
@@ -364,7 +393,7 @@ li::marker {
     transform: scale(1.1, 1.1);
 } */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .project-item img {
         /* flex-direction: column-reverse; */
         display: none;

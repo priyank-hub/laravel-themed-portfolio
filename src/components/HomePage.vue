@@ -1,8 +1,8 @@
 <template>
   <div class="">
-    <div class="m-auto w-75 content">
+    <div class="container content">
       <div class="gradient"></div>
-      <div class="row justify-content-center align-items-center homepage">
+      <div class="row justify-content-start align-items-center homepage">
         <div class="text-left title">
           <div class="greeting">Hello! My name is</div>
           <div class="name">Priyank Patel.</div>
@@ -77,7 +77,7 @@ a:hover .hover {
 
 @media screen and (max-width: 995px) {
   .content {
-    width: 90% !important;
+    width: 100% !important;
   }
 
   .greeting {

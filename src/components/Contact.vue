@@ -9,30 +9,42 @@
             </span>
         </h1>
 
-        <div class="my-5 text-left">
-            <div class="form-group">
-                <label for="" class="font-size-sm text-laravel">Name</label>
-                <b-form-input class="" style="font-size-15px" v-model="form.name"></b-form-input>
-            </div>
+        <div class="container my-5 text-left">
+            <div class="row mx-0 justify-content-center">
+                <div class="col-12 col-lg-6">
+                    <div class="mb-4">
+                        <label for="" class="font-size-sm text-laravel">Name</label>
+                        <div class="mt-2">
+                            <input class="w-100" style="font-size-15px" v-model="form.name">
+                        </div>
+                    </div>
 
-            <div class="form-group">
-                <label for="" class="font-size-sm text-laravel">Email</label>
-                <b-form-input class="" style="font-size-15px" v-model="form.name"></b-form-input>
-            </div>
+                    <div class="form-group mb-4">
+                        <label for="" class="font-size-sm text-laravel">Email</label>
+                        <div class="mt-2">
+                            <input class="w-100" style="font-size-15px" v-model="form.email">
+                        </div>
+                    </div>
 
-            <div class="form-group">
-                <label for="" class="font-size-sm text-laravel">Message</label>
-                <b-form-input class="" style="font-size-15px" v-model="form.name"></b-form-input>
-            </div>
+                    <div class="form-group mb-4">
+                        <label for="" class="font-size-sm text-laravel">Message</label>
+                        <div class="mt-2">
+                            <textarea name="" class="w-100" id="" rows="3" style="font-size-15px" v-model="form.message"></textarea>
+                        </div>
+                    </div>
 
-            <a href="" class="border-laravel text-decoration-none text-white mx-2 my-4 text-right">
-                <div class="hover bg-laravel p-2">
-                    <i class="fas fa-paper-plane"></i>
-                    <span class="mx-2">
-                        Submit
-                    </span>
+                    <div class="d-flex flex-row">
+                        <a href="" class="text-decoration-none text-white" style="border: 1px solid #FF2C1F">
+                            <div class="hover bg-laravel p-2 px-3">
+                                <i class="fas fa-paper-plane"></i>
+                                <span class="mx-2">
+                                    Submit
+                                </span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </a>
+            </div>
         </div>
     </div>
   </div>
@@ -47,7 +59,7 @@ export default {
     return {
         form: {
             name: null,
-            subject: null,
+            email: null,
             message: null,
         }
     }
@@ -59,5 +71,29 @@ export default {
 <style scoped>
 h1 {
     font-size: 3rem;
+    color: black;
+}
+
+a:hover .hover {
+  translate: -0.25rem -0.25rem !important;
+}
+
+input, textarea {
+    border-radius: 0px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+input:focus-visible, textarea:focus-visible {
+    box-shadow: none !important;
+    outline: none !important;
+    transition: all 0.3s ease 0s, left 0.3s ease 0s;
+    border-bottom: 2px solid #FF2C1F;
+}
+
+.submit {
+    width: 130px;
 }
 </style>
