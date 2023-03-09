@@ -2,7 +2,7 @@
   <div id="app">
     <div class="" style="position: fixed; top: 80px; right: 20px">
       <label for="night-light-checkbox" class="night-light-label" :class="mode == 'dark' ? 'bg-black' : 'bg-white'">
-        <input type="checkbox" id="night-light-checkbox">
+        <input type="checkbox" id="night-light-checkbox" v-model="checkMode">
         <span class="night-light-ball"></span>
         <svg viewBox="0 0 512 512" class="sun-svg" :class="mode == 'dark' ? 'fill-white' : 'fill-black'">
           <path id="sun-svg" d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z">
@@ -211,6 +211,7 @@ export default {
         }
       ],
       mode: this.getMode(),
+      checkMode: this.getCheckMode(),
     }
   },
 
@@ -253,20 +254,19 @@ export default {
       else if (t == 'light') {
         document.body.style.backgroundColor = 'transparent';
       }
-
       return t ? t : 'light';
-
     },
-    switchMode(mode) {
-      this.mode = mode;
+    getCheckMode() {
+      let t = localStorage.getItem('mode');
 
-      if (mode == 'dark') {
-        // var body = document.getElementsByTagName("BODY")[0];
-        document.body.style.backgroundColor = '#171923'
+      if (t == 'dark') {
+        return true;
       }
-      else if (mode == 'light') {
-        document.body.style.backgroundColor = 'transparent'
+      else if (t == 'light') {
+        return false;
       }
+
+      return true;
     }
   }
 }

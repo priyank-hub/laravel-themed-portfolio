@@ -4,9 +4,9 @@
       <div class="gradient"></div>
       <div class="row justify-content-start align-items-center homepage">
         <div class="text-left title">
-          <div class="greeting" :class="mode == 'dark' ? 'text-white' : 'text-black'">Hello! My name is</div>
-          <div class="name">Priyank Patel.</div>
-          <div class="greeting" :class="mode == 'dark' ? 'text-white' : 'text-black'">I'm a Full Stack Web Developer.</div>
+          <div class="greeting" id="hello" :class="mode == 'dark' ? 'text-white' : 'text-black'">Hello! My name is</div>
+          <div class="name" id="my-name">Priyank Patel.</div>
+          <div class="greeting" id="position" :class="mode == 'dark' ? 'text-white' : 'text-black'">I'm a Full Stack Web Developer.</div>
 
           <div class="d-flex flex-row mt-4 social">
             <a href="https://www.linkedin.com/in/priyank9/" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
@@ -38,6 +38,17 @@ export default {
   name: 'HomePage',
   props: {
     mode: String
+  },
+  mounted() {
+    let hello = document.getElementById('hello');
+    let my_name = document.getElementById('my-name');
+    let position = document.getElementById('position');
+
+    hello.classList.add('fadeInUp');
+
+    my_name.classList.add('fadeInUp');
+
+    position.classList.add('fadeInUp');
   }
 }
 </script>
@@ -109,5 +120,22 @@ a:hover .hover {
   font-size: 6rem;
   font-weight: 700;
   color: #FF2C1F;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 0.5s;
 }
 </style>
