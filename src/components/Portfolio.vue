@@ -33,7 +33,7 @@
                             </p>
 
                             <div class="d-flex flex-row mt-4 social">
-                                <a href="https://github.com/priyank-hub/spotify-profile-frontend" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
+                                <a href="https://github.com/priyank-hub/spotify-profile-frontend" target="_blank" class="border-laravel text-decoration-none text-white">
                                     <div class="hover bg-laravel p-2 px-3">
                                         <i class="fas fa-code"></i>
                                         <span class="mx-2">
@@ -82,7 +82,7 @@
                             </p>
 
                             <div class="d-flex flex-row mt-4 social">
-                                <a href="https://github.com/priyank-hub/Charizard-4413-FrontEnd" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
+                                <a href="https://github.com/priyank-hub/Charizard-4413-FrontEnd" target="_blank" class="border-laravel text-decoration-none text-white">
                                     <div class="hover bg-laravel p-2 px-3">
                                         <i class="fas fa-code"></i>
                                         <span class="mx-2">
@@ -119,7 +119,7 @@
                             </p>
 
                             <div class="d-flex flex-row mt-4 social">
-                                <a href="https://github.com/priyank-hub/weatherinfo" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
+                                <a href="https://github.com/priyank-hub/weatherinfo" target="_blank" class="border-laravel text-decoration-none text-white">
                                     <div class="hover bg-laravel p-2 px-3">
                                         <i class="fas fa-code"></i>
                                         <span class="mx-2">
