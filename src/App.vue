@@ -210,7 +210,7 @@ export default {
           url: '#contact',
         }
       ],
-      mode: 'light',
+      mode: this.getMode(),
     }
   },
 
@@ -224,12 +224,14 @@ export default {
     darkCheck.addEventListener('click', () => {
       if (darkCheck.checked) {
         this.mode = 'dark';
+        localStorage.setItem('mode', 'dark');
         document.body.style.backgroundColor = '#171923'
         // document.body.classList.add('dark');
         // localStorage.setItem('animate-css', 'dark');
       } 
       else {
         this.mode = 'light';
+        localStorage.setItem('mode', 'light');
         document.body.style.backgroundColor = 'transparent'
         // document.body.classList.remove('dark');
         // localStorage.removeItem('animate-css');
@@ -243,6 +245,18 @@ export default {
   },
 
   methods: {
+    getMode() {
+      let t = localStorage.getItem('mode');
+      if (t == 'dark') {
+        document.body.style.backgroundColor = '#171923';
+      }
+      else if (t == 'light') {
+        document.body.style.backgroundColor = 'transparent';
+      }
+
+      return t ? t : 'light';
+
+    },
     switchMode(mode) {
       this.mode = mode;
 
