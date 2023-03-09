@@ -1,21 +1,22 @@
 <template>
   <div class="row mx-0 justify-content-center align-items-center" style="min-height: 80vh">
     <div class="">
-      <h1 class="font-weight-bold">
-        <span class="">
-          <span class="text-black">
-              Resume
-          </span>
-        </span>
-      </h1>
+      <div class="d-flex flex-row align-items-center mx-0 px-3">
+          <div class="font-size-xl text-left font-weight-bold">
+              <span class="text-black">
+                  Resume
+              </span>
+          </div>
+          <div class="line"></div>
+      </div>
 
       <div class="container my-5">
-        <div class="d-flex flex-row justify-content-center">
+        <div class="d-flex flex-row justify-content-start">
           <a href="" class="border-laravel text-decoration-none text-white mx-2">
             <div class="hover bg-laravel p-2 px-3">
               <i class="fas fa-eye"></i>
               <span class="mx-2">
-                View Resume
+                View
               </span>
             </div>
           </a>
@@ -51,5 +52,13 @@ h1 {
 
 a:hover .hover {
   translate: -0.25rem -0.25rem !important;
+}
+
+.line {
+    min-width: 25vw;
+    max-width: 40vw;
+    height: 1px;
+    background: #FF2C1F;
+    margin-left: 20px;
 }
 </style>

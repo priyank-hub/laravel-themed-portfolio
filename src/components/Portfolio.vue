@@ -2,29 +2,20 @@
   <div class="">
     <!-- <h1 class="font-weight-bold">Portfolio</h1> -->
 
-    <!-- <div class="container mb-5 position-relative">
-        <div class="bar m-auto mb-4"></div>
-        <div class="mb-3">
-            <h4 class="fw-bold text-center">Technologies I've worked with</h4>
-        </div>
-        <div class="mx-0 skill-grid">
-            <div class="my-4 skill-item" v-for="item in skills" :key="item">
-                <a :href="item.website" target="_blank">
-                    <img :src="item.url" height="55px" style="object-fit: cover" alt="">
-                    <div class="subtitle text-muted mt-3">
-                        {{ item.name }}
-                    </div>
-                </a>
+    <div class="container">
+        <div class="d-flex flex-row align-items-center mx-0">
+            <div class="font-size-xl text-left font-weight-bold">
+                <span class="text-black">
+                    Some Things I've Built
+                </span>
             </div>
+            <div class="line"></div>
         </div>
-        <div class="bar m-auto mt-4"></div>
-    </div> -->
 
-    <div class="container mt-4">
         <div class="row mx-0">
-            <div class="col-12 card-item">
+            <div class="col-12 card-item px-0">
                 <div class="row mx-0 align-items-center justify-content-between project-item">
-                    <div class="col-12 col-lg-12 col-xl-6 text-left">
+                    <div class="col-12 col-xl-6 text-left px-0">
                         <!-- content -->
                         <h3 class="text-black fw-bold">Spotify Data Visualizer</h3>
                         <div class="text-muted">
@@ -63,18 +54,18 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-lg-12 col-xl-5 mb-5 d-md-none d-xl-block">
+                    <div class="col-12 col-xl-5 mb-5 d-md-none d-xl-block">
                         <img src="/assets/portfolio/spotify-3.png" class="" width="100%" style="border-radius: 15px; transform: rotate(1deg)" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 card-item">
+            <div class="col-12 card-item px-0">
                 <div class="row mx-0 align-items-center justify-content-between project-item">
-                    <div class="col-12 col-lg-12 col-xl-5 mb-5 d-md-none d-xl-block">
+                    <div class="col-12 col-xl-5 mb-5 d-md-none d-xl-block px-0">
                         <img src="/assets/portfolio/bookstore.png" class="" width="100%" style="border-radius: 20px; transform: rotate(-1deg)" alt="">
                     </div>
-                    <div class="col-12 col-lg-12 col-xl-6 text-left">
+                    <div class="col-12 col-xl-6 text-left">
                         <!-- content -->
                         <h3 class="text-black fw-bold">E-Commerce Bookstore Project</h3>
                         <div class="text-muted">
@@ -114,9 +105,9 @@
                 </div>
             </div>
 
-            <div class="col-12 card-item">
+            <div class="col-12 card-item px-0">
                 <div class="row mx-0 align-items-center justify-content-between project-item">
-                    <div class="col-12 col-lg-12 col-xl-6 text-left">
+                    <div class="col-12 col-xl-6 text-left px-0">
                         <h3 class="text-black fw-bold">Weather Info</h3>
                         <div class="text-muted">
                             <p>
@@ -148,14 +139,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-12 col-xl-5 d-md-none d-xl-block">
+                    <div class="col-12 col-xl-5 d-md-none d-xl-block">
                         <img src="/assets/portfolio/weatherinfo.png" class="" width="100%" style="border-radius: 20px; transform: rotate(1deg)" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 card-item">
-                <div class="row mx-0 justify-content-between d-flex">
+            <div class="col-12 card-item px-0">
+                <div class="row justify-content-between d-flex">
                     <div class="col-12 col-lg-6 col-xl-4 mb-4 ui-item">
                         <div class="border-0 box-shadow p-3" style=" border-radius: 15px">
                             <div class="image">
@@ -359,12 +350,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1 {
-    font-size: 3rem;
-}
 
 h3 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -448,5 +436,13 @@ li::marker {
     transform: scale(1.1, 1.1);
     /* background: #FF2C1F; */
     /* box-shadow: 0px 0px 15px 4px rgba(255, 44, 31, 0.1); */
+}
+
+.line {
+    min-width: 25vw;
+    max-width: 40vw;
+    height: 1px;
+    background: #FF2C1F;
+    margin-left: 20px;
 }
 </style>

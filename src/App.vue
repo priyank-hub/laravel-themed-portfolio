@@ -251,13 +251,13 @@ nav {
 .links {
   position: fixed;
   bottom: 20px;
-  left: 40px;
+  left: 15px;
 }
 
 .links-inverse {
   position: fixed;
   bottom: 20px;
-  right: 40px;
+  right: 15px;
 }
 
 .links-inverse .text {

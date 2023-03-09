@@ -1,13 +1,14 @@
 <template>
   <div class="row mx-0 justify-content-center align-items-center" style="min-height: 100vh">
     <div>
-        <h1 class="font-weight-bold">
-            <span class="">
-                <span class="">
+        <div class="d-flex flex-row align-items-center mx-0 px-3">
+            <div class="font-size-xl text-left font-weight-bold">
+                <span class="text-black">
                     Get In Touch
                 </span>
-            </span>
-        </h1>
+            </div>
+            <div class="line-bar"></div>
+        </div>
 
         <div class="container my-5 text-left">
             <div class="row mx-0 justify-content-center">
@@ -95,5 +96,13 @@ input:focus-visible, textarea:focus-visible {
 
 .submit {
     width: 130px;
+}
+
+.line-bar {
+    min-width: 25vw;
+    max-width: 40vw;
+    height: 1px;
+    background: #FF2C1F;
+    margin-left: 20px;
 }
 </style>

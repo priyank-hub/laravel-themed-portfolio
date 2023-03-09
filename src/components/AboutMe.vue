@@ -1,23 +1,18 @@
 <template>
   <div class="">
-    <div class="">  
-        <h1 class="font-weight-bold">
-            <span class="">
-                <span class="text-black">
-                    About Me
-                </span>
+    <div class="d-flex flex-row align-items-center mx-0 px-3">
+        <div class="font-size-xl text-left font-weight-bold">
+            <span class="text-black">
+                About Me
             </span>
-        </h1>
+        </div>
+        <div class="line"></div>
     </div>
-    <div class="container my-4 text-left about my-5">
+
+    <div class="container my-4 text-left about">
         <div class="row align-itmes-center">
-            <!-- <div class="col-3 text-center image">
-                <div class="row align-items-center justify-content-center h-100">
-                    <img class="col-6" src="/assets/programmer-red.png" alt="">
-                </div>
-            </div> -->
             <div class="col-12 col-lg-12">
-                <p class="px-3">
+                <p class="">
                     Hello, my name is Priyank Patel, and I'm a Full Stack web developer with <span class="text-laravel"> 2 Years </span> of experience. 
                     I have a Bachelor's degree in <span class="text-laravel"> Computer Science </span> from <span class="text-laravel">York University</span> in Toronto, Canada. 
                     I'm always eager to learn new programming languages and enjoy the challenge of building solutions that meet my clients' needs. 
@@ -33,7 +28,7 @@
         <div class="container my-5 position-relative">
             <div class="bar m-auto mb-4"></div>
             <div class="mb-3">
-                <h4 class="fw-bold text-center">Technologies I've worked with</h4>
+                <h5 class="text-center font-weight-light">Technologies I've worked with</h5>
             </div>
             <div class="mx-0 skill-grid text-center">
                 <div class="my-4 skill-item" v-for="item in skills" :key="item">
@@ -160,12 +155,8 @@ export default {
     }
 }
 
-h1 {
-    font-size: 3rem;
-} 
-
 h3 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -243,5 +234,13 @@ li::marker {
 
 .skill-item:hover {
     transform: scale(1.1, 1.1);
+}
+
+.line {
+    min-width: 25vw;
+    max-width: 40vw;
+    height: 1px;
+    background: #FF2C1F;
+    margin-left: 20px;
 }
 </style>
