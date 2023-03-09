@@ -65,7 +65,7 @@
                     <div class="col-12 col-xl-5 mb-5 d-md-none d-xl-block px-0">
                         <img src="/assets/portfolio/bookstore.png" class="" width="100%" style="border-radius: 20px; transform: rotate(-1deg)" alt="">
                     </div>
-                    <div class="col-12 col-xl-6 text-left">
+                    <div class="col-12 col-xl-6 text-left px-0">
                         <!-- content -->
                         <h3 class="fw-bold" :class="mode == 'dark' ? 'text-white' : 'text-black'">E-Commerce Bookstore Project</h3>
                         <div class="text-muted">
