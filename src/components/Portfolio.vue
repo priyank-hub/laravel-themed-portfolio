@@ -55,7 +55,7 @@
                     </div>
 
                     <div class="col-12 col-xl-5 mb-5 d-md-none d-xl-block">
-                        <img src="/assets/portfolio/spotify-3.png" class="" width="100%" style="border-radius: 15px; transform: rotate(1deg)" alt="">
+                        <img src="/assets/portfolio/spotify-3.png" class="" width="100%" style="border-radius: 0px" alt="">
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@
             <div class="col-12 card-item px-0 reveal">
                 <div class="row mx-0 align-items-center justify-content-between project-item">
                     <div class="col-12 col-xl-5 mb-5 d-md-none d-xl-block px-0">
-                        <img src="/assets/portfolio/bookstore.png" class="" width="100%" style="border-radius: 20px; transform: rotate(-1deg)" alt="">
+                        <img src="/assets/portfolio/bookstore.png" class="" width="100%" style="border-radius: 0px" alt="">
                     </div>
                     <div class="col-12 col-xl-6 text-left px-0">
                         <!-- content -->
@@ -140,109 +140,137 @@
                         </div>
                     </div>
                     <div class="col-12 col-xl-5 d-md-none d-xl-block">
-                        <img src="/assets/portfolio/weatherinfo.png" class="" width="100%" style="border-radius: 20px; transform: rotate(1deg)" alt="">
+                        <img src="/assets/portfolio/weatherinfo.png" class="" width="100%" style="border-radius: 0px" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 card-item px-0">
-                <div class="row justify-content-between d-flex">
-                    <div class="col-12 col-lg-6 col-xl-4 mb-4 reveal">
-                        <div class="border-0 box-shadow p-3" style=" border-radius: 15px">
-                            <div class="image">
-                                <img src="/assets/portfolio/nft.png" width="100%" style="border-radius: 5px; height: 250px; object-fit: cover" alt="">
-                            </div>
-                            <div class="content mt-5">
-                                <h4 class="fw-bold" :class="mode == 'dark' ? 'text-white' : 'text-black'">NFT Preview Card</h4>
-                                <div class="text-muted subtitle">
-                                    UI Component
+            <div class="col-12 px-0 my-4">
+                <div class="row">
+                    <div class="col-12 col-mg-6 col-lg-4 mb-3 reveal" :class="mode == 'dark' ? 'ui-card' : 'ui-card-light'">
+                        <div :class="mode == 'dark' ? 'bg-dark-grey' : 'bg-light-grey'" class="d-flex flex-column justify-content-between p-4 h-100">
+                            <div class="mb-4">
+                                <div class="d-flex flex-row justify-content-between w-100" style="font-size: 18px">
+                                    <a href="https://github.com/priyank-hub/nft-preview-card" target="_blank" class="text-decoration-none text-secondary">
+                                        <i class="fas fa-folder"></i>
+                                    </a>
+
+                                    <a href="https://nft-preview-card-five-hazel.vercel.app/" target="_blank" class="text-decoration-none text-secondary">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
                                 </div>
                             </div>
-
-                            <div class="d-flex flex-row mt-4 social">
-                                <a href="https://github.com/priyank-hub/nft-preview-card" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
-                                    <div class="hover bg-laravel p-2 px-3">
-                                        <i class="fas fa-code"></i>
-                                        <span class="mx-2">
-                                            Repository
-                                        </span>
-                                    </div>
-                                </a>
-
-                                <a href="https://nft-preview-card-five-hazel.vercel.app/" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
-                                    <div class="hover bg-laravel p-2 px-3">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        <span class="mx-2">
-                                            View
-                                        </span>
-                                    </div>
-                                </a>
+                            <div class="text-left">
+                                <div class="">
+                                    <h5 class="fw-bold">NFT Preview Card</h5>
+                                </div>
+                                <p class="text-muted font-size-sm mt-3">
+                                    Towards the begining of my developer journey, I had an opportunity to practice my Frontend skills on Frontendmentor.io. 
+                                    This was one of the UI component I challenged myself to complete it.
+                                </p>
+                            </div>
+                            <div class="text-left font-size-sm">
+                                <ul class="list-tech">
+                                    <li>Vue.js</li>
+                                    <li>Bootstrap-Vue</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-lg-6 col-xl-4 mb-4 ui-item reveal">
-                        <div class="border-0 box-shadow p-3" style=" border-radius: 15px">
-                            <div class="image">
-                                <img src="/assets/portfolio/products-page.png" width="100%" style="border-radius: 5px; height: 250px; object-fit: cover" alt="">
-                            </div>
-                            <div class="content mt-5">
-                                <h4 class="fw-bold" :class="mode == 'dark' ? 'text-white' : 'text-black'">Products Page</h4>
-                                <div class="text-muted subtitle">
-                                    UI Component
+                    <div class="col-12 col-mg-6 col-lg-4 mb-3 reveal" :class="mode == 'dark' ? 'ui-card' : 'ui-card-light'">
+                        <div :class="mode == 'dark' ? 'bg-dark-grey' : 'bg-light-grey'" class="d-flex flex-column justify-content-between p-4 h-100">
+                            <div class="mb-4">
+                                <div class="d-flex flex-row justify-content-between w-100" style="font-size: 18px">
+                                    <a href="https://github.com/priyank-hub/e-commerce-product-page" target="_blank" class="text-decoration-none text-secondary">
+                                        <i class="fas fa-folder"></i>
+                                    </a>
+
+                                    <a href="https://e-commerce-product-page-g39t.vercel.app/" target="_blank" class="text-decoration-none text-secondary">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="d-flex flex-row mt-4 social">
-                                <a href="https://github.com/priyank-hub/e-commerce-product-page" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
-                                    <div class="hover bg-laravel p-2 px-3">
-                                        <i class="fas fa-code"></i>
-                                        <span class="mx-2">
-                                            Repository
-                                        </span>
-                                    </div>
-                                </a>
+                            <div class="text-left">
+                                <div class="">
+                                    <h5 class="fw-bold">E-Commerce Product Page</h5>
+                                </div>
+                                <p class="text-muted font-size-sm mt-3">
+                                    This UI component features a beautiful E-commerce product page. It details the product name, description, price, images.
+                                    Also, opening a lightbox gallery to give a closer look at product images with image carousel.
+                                </p>
+                            </div>
+                            <div class="text-left font-size-sm">
+                                <ul class="list-tech">
+                                    <li>Vue.js</li>
+                                    <li>Bootstrap-Vue</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-mg-6 col-lg-4 mb-3 reveal" :class="mode == 'dark' ? 'ui-card' : 'ui-card-light'">
+                        <div :class="mode == 'dark' ? 'bg-dark-grey' : 'bg-light-grey'" class="d-flex flex-column justify-content-between p-4 h-100">
+                            <div class="mb-4">
+                                <div class="d-flex flex-row justify-content-between w-100" style="font-size: 18px">
+                                    <a href="https://github.com/priyank-hub/REST_countries_API" target="_blank" class="text-decoration-none text-secondary">
+                                        <i class="fas fa-folder"></i>
+                                    </a>
 
-                                <a href="https://e-commerce-product-page-g39t.vercel.app/" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
-                                    <div class="hover bg-laravel p-2 px-3">
+                                    <a href="https://rest-countries-api-jade-iota.vercel.app/#/" target="_blank" class="text-decoration-none text-secondary">
                                         <i class="fas fa-external-link-alt"></i>
-                                        <span class="mx-2">
-                                            View
-                                        </span>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text-left">
+                                <div class="">
+                                    <h5 class="fw-bold">REST Countries API</h5>
+                                </div>
+                                <p class="text-muted font-size-sm mt-3">
+                                    By putting my Javascript and API skills to test, I built this project to display all countries and 
+                                    also view more about the country by pulling data from <span class="text-laravel">REST Countries API</span>.
+                                    It has a switch for light/dark modes.
+                                </p>
+                            </div>
+                            <div class="text-left font-size-sm">
+                                <ul class="list-tech">
+                                    <li>Vue.js</li>
+                                    <li>Vuetify</li>
+                                    <li>JavaScript</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-lg-6 col-xl-4 mb-4 ui-item reveal">
-                        <div class="border-0 box-shadow p-3" style=" border-radius: 15px">
-                            <div class="image">
-                                <img src="/assets/portfolio/countries.png" width="100%" style="border-radius: 5px; height: 250px; object-fit: cover" alt="">
-                            </div>
-                            <div class="content mt-5">
-                                <h4 class="fw-bold" :class="mode == 'dark' ? 'text-white' : 'text-black'">Countries Info</h4>
-                                <div class="text-muted subtitle">
-                                    UI Component
+                    <div class="col-12 col-mg-6 col-lg-4 mb-3 reveal" :class="mode == 'dark' ? 'ui-card' : 'ui-card-light'">
+                        <div :class="mode == 'dark' ? 'bg-dark-grey' : 'bg-light-grey'" class="d-flex flex-column justify-content-between p-4 h-100">
+                            <div class="mb-4">
+                                <div class="d-flex flex-row justify-content-between w-100" style="font-size: 18px">
+                                    <a href="https://github.com/priyank-hub/github_users_search" target="_blank" class="text-decoration-none text-secondary">
+                                        <i class="fas fa-folder"></i>
+                                    </a>
+
+                                    <a href="https://mygitfinder.vercel.app/" target="_blank" class="text-decoration-none text-secondary">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="d-flex flex-row mt-4 social">
-                                <a href="https://github.com/priyank-hub/REST_countries_API" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
-                                    <div class="hover bg-laravel p-2 px-3">
-                                        <i class="fas fa-code"></i>
-                                        <span class="mx-2">
-                                            Repository
-                                        </span>
-                                    </div>
-                                </a>
-
-                                <a href="https://rest-countries-api-jade-iota.vercel.app/#/" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
-                                    <div class="hover bg-laravel p-2 px-3">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        <span class="mx-2">
-                                            View
-                                        </span>
-                                    </div>
-                                </a>
+                            <div class="text-left">
+                                <div class="">
+                                    <h5 class="fw-bold">GitFinder</h5>
+                                </div>
+                                <p class="text-muted font-size-sm mt-3">
+                                    To kick things off, I built this project with the help of <span class="text-laravel">Github Users API</span> to view basic details like their followers, repositories of a Github user.
+                                    It also has light/dark themes. 
+                                </p>
+                            </div>
+                            <div class="text-left font-size-sm">
+                                <ul class="list-tech">
+                                    <li>Vue.js</li>
+                                    <li>Vuetify</li>
+                                    <li>JavaScript</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -444,5 +472,36 @@ li::marker {
     height: 1px;
     background: #FF2C1F;
     margin-left: 20px;
+}
+
+.list-tech {
+    display: flex;
+    align-items: flex-end;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 20px 0px 0px;
+    list-style: none;
+}
+
+.list-tech li:not(:last-of-type) {
+    margin-right: 15px;
+}
+
+.ui-card, .ui-card-light, i, h5, ul {
+    transition: 0.3s all;
+}
+
+.ui-card:hover, .ui-card-light:hover {
+    translate: -5px -5px;
+}
+
+.ui-card i:hover, .ui-card-light i:hover {
+    color: #FF2C1F;
+}
+
+.ui-card:hover h5, .ui-card:hover ul {
+    color: #fff;
 }
 </style>

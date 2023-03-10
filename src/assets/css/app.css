@@ -143,3 +143,7 @@ button:hover .hover {
     transform: translateY(0);
     opacity: 1;
 }
+
+.bg-dark-grey {
+    background: #13141D;
+}

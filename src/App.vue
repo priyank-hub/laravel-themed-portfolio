@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="" style="position: fixed; top: 80px; right: 20px">
+    <div class="" style="position: fixed; top: 80px; right: 20px; z-index: 100">
       <label for="night-light-checkbox" class="night-light-label" :class="mode == 'dark' ? 'bg-black' : 'bg-white'">
         <input type="checkbox" id="night-light-checkbox" v-model="checkMode">
         <span class="night-light-ball"></span>
@@ -367,10 +367,6 @@ export default {
 
 .main {
   margin: 0px 10vw;
-}
-
-.bg-dark-grey {
-  background: #13141D;
 }
 
 
