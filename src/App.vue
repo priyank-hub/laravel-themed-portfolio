@@ -2,7 +2,8 @@
   <div id="app">
 
     <div class="row mx-0 justify-content-center align-items-center opacity-0" id="logo-animate">
-      <div class="" style="height: 200px">
+    <!-- <div class="" id="logo-animate"> -->
+      <div id="the-logo" style="height: 200px">
         <Logo />
       </div>
     </div>
@@ -230,12 +231,14 @@ export default {
   
   mounted() {
     const logo = document.getElementById('logo-animate');
+    // const theLogo = document.getElementById('the-logo');
 
     logo.style.backgroundColor = this.mode == 'dark' ? '#171923' : '#fff';
     logo.classList.remove('opacity-0');
     logo.classList.add('opacity-1');
 
     setTimeout(() => {
+      logo.classList.remove('opacity-1');
       logo.classList.add('opacity-0');
       logo.style.zIndex = -100;
     }, 2900);
@@ -323,9 +326,21 @@ export default {
   height: 100vh;
   width: 100%;
   z-index: 500;
-  /* background: #171923; */
   transition: opacity 0.5s ease-out;
 }
+
+/* .move-corner {
+  animation: move-to-corner 1s forwards;
+} */
+
+
+/* @keyframes move-to-corner {
+  to {
+    top: 0;
+    left: 0;
+    transform: translate(-40%, -192%) scale(0.3);
+  }
+} */
 
 .opacity-1{
   opacity: 1;

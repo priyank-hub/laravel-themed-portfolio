@@ -44,11 +44,14 @@ export default {
     let my_name = document.getElementById('my-name');
     let position = document.getElementById('position');
 
-    hello.classList.add('fadeInUp');
 
-    my_name.classList.add('fadeInUp');
-
-    position.classList.add('fadeInUp');
+    setTimeout(() => {
+      hello.classList.add('fadeInUp');
+  
+      my_name.classList.add('fadeInUp');
+  
+      position.classList.add('fadeInUp');
+    }, 2900)
   }
 }
 </script>
