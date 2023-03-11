@@ -281,7 +281,7 @@ export default {
   methods: {
     getMode() {
       let t = localStorage.getItem('mode');
-      if (t == 'dark') {
+      if (t == 'dark' || !t) {
         document.body.style.backgroundColor = '#171923';
       }
       else if (t == 'light') {
