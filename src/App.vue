@@ -279,7 +279,7 @@ export default {
         return false;
       }
 
-      return true;
+      return false;
     },
 
     reveal() {
