@@ -16,21 +16,21 @@
                     <div class="mb-4 reveal">
                         <label for="" class="font-size-sm text-laravel">Name</label>
                         <div class="mt-2">
-                            <input class="w-100" style="font-size-15px" v-model="form.name">
+                            <input class="w-100" style="font-size-15px" v-model="form.name" :class="mode == 'dark' ? 'text-white' : ''">
                         </div>
                     </div>
 
                     <div class="form-group mb-4 reveal">
                         <label for="" class="font-size-sm text-laravel">Email</label>
                         <div class="mt-2">
-                            <input class="w-100" style="font-size-15px" v-model="form.email">
+                            <input class="w-100" style="font-size-15px" v-model="form.email" :class="mode == 'dark' ? 'text-white' : ''">
                         </div>
                     </div>
 
                     <div class="form-group mb-4 reveal">
                         <label for="" class="font-size-sm text-laravel">Message</label>
                         <div class="mt-2">
-                            <textarea name="" class="w-100" id="" rows="3" style="font-size-15px" v-model="form.message"></textarea>
+                            <textarea name="" class="w-100" id="" rows="3" style="font-size-15px" v-model="form.message" :class="mode == 'dark' ? 'text-white' : ''"></textarea>
                         </div>
                     </div>
 
