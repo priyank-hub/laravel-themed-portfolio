@@ -1,5 +1,12 @@
 <template>
   <div id="app">
+
+    <div class="row mx-0 justify-content-center align-items-center opacity-0" id="logo-animate">
+      <div class="" style="height: 200px">
+        <Logo />
+      </div>
+    </div>
+
     <div class="" style="position: fixed; top: 80px; right: 20px; z-index: 100">
       <label for="night-light-checkbox" class="night-light-label" :class="mode == 'dark' ? 'bg-black' : 'bg-white'">
         <input type="checkbox" id="night-light-checkbox" v-model="checkMode">
@@ -222,6 +229,16 @@ export default {
   },
   
   mounted() {
+    const logo = document.getElementById('logo-animate');
+
+    logo.classList.remove('opacity-0');
+    logo.classList.add('opacity-1');
+
+    setTimeout(() => {
+      logo.classList.add('opacity-0');
+      logo.style.zIndex = -100;
+    }, 2600);
+
     const darkCheck = document.getElementById('night-light-checkbox');
 
     darkCheck.addEventListener('click', () => {
@@ -296,6 +313,25 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+#logo-animate {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 500;
+  background: #171923;
+  transition: opacity 0.5s ease-out;
+}
+
+.opacity-1{
+  opacity: 1;
+}
+
+.opacity-0{
+  opacity: 0;
 }
 
 .fill-white {
