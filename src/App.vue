@@ -16,13 +16,13 @@
     </div>
 
     <div class="nav-bar" :class="mode == 'dark' ? 'bg-dark-grey' : 'bg-light-grey'">
-      <div class="container-fluid pt-3" :class="isVisible ? '' : 'pb-3'">
+      <div class="container-fluid pt-2" :class="isVisible ? '' : 'pb-2'">
         <nav class="desktop">
-          <h3 class="mb-0 text-laravel brand">
+          <div class="" style="height: 55px">
             <a href="#home" class="text-laravel">
-              PP
+              <Logo />
             </a>
-          </h3>
+          </div>
           <ul class="nav-links mb-0">
             <li v-for="(item, index) in menu" :key="index" class="menu">
               <a :href="item.url" class="menu-item" :class="mode == 'dark' ? 'text-white' : 'text-black'">
@@ -32,13 +32,11 @@
           </ul>
         </nav>  
 
-        <div class="justify-content-between align-items center mobile">
-          <div class="col text-left">
-            <h3 class="mb-0 text-laravel brand">
-              <a href="#home" class="text-laravel">
-                PP
+        <div class="justify-content-between align-items-center mobile">
+          <div class="col text-left" style="height: 55px">
+              <a href="#home" class="text-laravel h-100">
+                <Logo />
               </a>
-            </h3>
           </div>
           <div class="col text-right" :class="mode == 'dark' ? 'text-white' : 'text-black'" v-b-toggle.my-collapse>
             <i class="fas fa-bars" v-if="! isVisible"></i>
@@ -90,22 +88,22 @@
         <div>
           <ul class="p-0 mb-0">
             <li class="">
-              <a href="https://github.com/priyank-hub" target="_blank">
-                <span class="icon" :class="mode == 'dark' ? 'text-laravel' : 'text-black'">
+              <a href="https://github.com/priyank-hub" target="_blank" class="text-black">
+                <span class="icon" :class="mode == 'dark' ? 'text-laravel' : ''">
                   <i class="fab fa-github"></i>
                 </span>
               </a>
             </li>
             <li class="">
-              <a href="https://www.linkedin.com/in/priyank9/" target="_blank">
-                <span class="icon" :class="mode == 'dark' ? 'text-laravel' : 'text-black'">
+              <a href="https://www.linkedin.com/in/priyank9/" target="_blank" class="text-black">
+                <span class="icon" :class="mode == 'dark' ? 'text-laravel' : ''">
                   <i class="fab fa-linkedin"></i>
                 </span>
               </a>
             </li>
             <li class="">
-              <a href="https://twitter.com/p1ku99" target="_blank">
-                <span class="icon" :class="mode == 'dark' ? 'text-laravel' : 'text-black'">
+              <a href="https://twitter.com/p1ku99" target="_blank" class="text-black">
+                <span class="icon" :class="mode == 'dark' ? 'text-laravel' : ''">
                   <i class="fab fa-twitter"></i>
                 </span>
               </a>
@@ -180,6 +178,7 @@ import AboutMe from './components/AboutMe.vue'
 import Portfolio from './components/Portfolio.vue'
 import ResumeSection from './components/ResumeSection.vue'
 import Contact from './components/Contact.vue'
+import Logo from './components/Logo.vue'
 
 export default {
   name: 'App',
@@ -189,6 +188,7 @@ export default {
     Portfolio,
     ResumeSection,
     Contact,
+    Logo
   },
 
   data() {
