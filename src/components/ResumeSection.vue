@@ -12,7 +12,7 @@
 
       <div class="container my-5">
         <div class="d-flex flex-row justify-content-start">
-          <a href="" class="border-laravel text-decoration-none text-white mx-2 reveal">
+          <a href="/assets/Resume.pdf" target="_blank" class="border-laravel text-decoration-none text-white mx-2 reveal">
             <div class="hover bg-laravel p-2 px-3">
               <i class="fas fa-eye"></i>
               <span class="mx-2">
@@ -21,7 +21,7 @@
             </div>
           </a>
 
-          <a href="" class="border-laravel text-decoration-none text-white mx-2 reveal">
+          <a href="/assets/Resume.pdf" class="border-laravel text-decoration-none text-white mx-2 reveal" download>
             <div class="hover bg-laravel p-2 px-3">
               <i class="fas fa-download"></i>
               <span class="mx-2">
