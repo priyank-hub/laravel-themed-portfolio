@@ -61,10 +61,45 @@
             </div>
 
             <div class="col-12 card-item px-0 reveal">
-                <div class="row mx-0 align-items-center justify-content-between project-item">
-                    <div class="col-12 col-xl-5 mb-5 d-md-none d-xl-block px-0">
-                        <img src="/assets/portfolio/bookstore.png" class="" width="100%" style="border-radius: 0px" alt="">
+                <div class="row mx-0 align-items-start justify-content-between project-item">
+                    <div class="col-12 col-xl-5 mb-5 d-md-none d-xl-block">
+                        <img src="/assets/portfolio/gitfinder.png" class="" width="100%" style="border-radius: 0px" alt="">
                     </div>
+                    <div class="col-12 col-xl-6 text-left px-0">
+                        <h3 class="fw-bold" :class="mode == 'dark' ? 'text-white' : 'text-black'">GitFinder</h3>
+                        <div class="text-muted">
+                            <p>
+                                GitFinder is a web application that allows users to search for any GitHub username and get basic information about their profile. 
+                                The application uses the <span class="text-laravel">GitHub User API</span> to fetch data such as the user's followers, repository details, and other relevant information. 
+                                The project is built using modern web frameworks such as <span class="text-laravel">Vue.js</span>, <span class="text-laravel">Vuetify</span>, <span class="text-laravel">JavaScript</span> and the GitHub User API. 
+                            </p>
+
+                            <div class="d-flex flex-row mt-4 social">
+                                <a href="https://github.com/priyank-hub/github_users_search" target="_blank" class="border-laravel text-decoration-none text-white">
+                                    <div class="hover bg-laravel p-2 px-3">
+                                        <i class="fas fa-code"></i>
+                                        <span class="mx-2">
+                                            Repository
+                                        </span>
+                                    </div>
+                                </a>
+
+                                <a href="https://mygitfinder.vercel.app/" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
+                                    <div class="hover bg-laravel p-2 px-3">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <span class="mx-2">
+                                            View
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 card-item px-0 reveal">
+                <div class="row mx-0 align-items-center justify-content-between project-item">
                     <div class="col-12 col-xl-6 text-left px-0">
                         <!-- content -->
                         <h3 class="fw-bold" :class="mode == 'dark' ? 'text-white' : 'text-black'">E-Commerce Bookstore Project</h3>
@@ -102,50 +137,18 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="col-12 card-item px-0 reveal">
-                <div class="row mx-0 align-items-center justify-content-between project-item">
-                    <div class="col-12 col-xl-6 text-left px-0">
-                        <h3 class="fw-bold" :class="mode == 'dark' ? 'text-white' : 'text-black'">Weather Info</h3>
-                        <div class="text-muted">
-                            <p>
-                                Weather Info is a 
-                                <span class="text-laravel">HTML</span>,
-                                <span class="text-laravel">CSS (Bootstrap)</span>,
-                                <span class="text-laravel">JavaScript</span>
-                                web application designed to keep track of live weather forecast in any city around the world using the <span class="text-laravel">OpenWeather API</span>.
-                            </p>
-
-                            <div class="d-flex flex-row mt-4 social">
-                                <a href="https://github.com/priyank-hub/weatherinfo" target="_blank" class="border-laravel text-decoration-none text-white">
-                                    <div class="hover bg-laravel p-2 px-3">
-                                        <i class="fas fa-code"></i>
-                                        <span class="mx-2">
-                                            Repository
-                                        </span>
-                                    </div>
-                                </a>
-
-                                <a href="https://priyank-hub.github.io/weatherinfo/event.html" target="_blank" class="border-laravel text-decoration-none text-white mx-2">
-                                    <div class="hover bg-laravel p-2 px-3">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        <span class="mx-2">
-                                            View
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-5 d-md-none d-xl-block">
-                        <img src="/assets/portfolio/weatherinfo.png" class="" width="100%" style="border-radius: 0px" alt="">
+                    <div class="col-12 col-xl-5 mb-5 d-md-none d-xl-block px-0">
+                        <img src="/assets/portfolio/bookstore.png" class="" width="100%" style="border-radius: 0px" alt="">
                     </div>
                 </div>
             </div>
 
             <div class="col-12 px-0 my-4">
+                <div class="d-flex flex-row mx-0 justify-content-center align-items-center mb-4 reveal">
+                    <div class="line-accent"></div>
+                    <div class="fw-bold font-size-xl mx-4" :class="mode == 'dark' ? 'text-white' : 'text-black'">Some Other Projects</div>
+                    <div class="line-accent"></div>
+                </div>
                 <div class="row">
                     <div class="col-12 col-mg-6 col-lg-4 mb-3 reveal" :class="mode == 'dark' ? 'ui-card' : 'ui-card-light'">
                         <div :class="mode == 'dark' ? 'bg-dark-grey' : 'bg-light-grey'" class="d-flex flex-column justify-content-between p-4 h-100">
@@ -247,28 +250,29 @@
                         <div :class="mode == 'dark' ? 'bg-dark-grey' : 'bg-light-grey'" class="d-flex flex-column justify-content-between p-4 h-100">
                             <div class="mb-4">
                                 <div class="d-flex flex-row justify-content-between w-100" style="font-size: 18px">
-                                    <a href="https://github.com/priyank-hub/github_users_search" target="_blank" class="text-decoration-none text-secondary">
+                                    <a href="https://github.com/priyank-hub/weatherinfo" target="_blank" class="text-decoration-none text-secondary">
                                         <i class="fas fa-folder"></i>
                                     </a>
 
-                                    <a href="https://mygitfinder.vercel.app/" target="_blank" class="text-decoration-none text-secondary">
+                                    <a href="https://priyank-hub.github.io/weatherinfo/event.html" target="_blank" class="text-decoration-none text-secondary">
                                         <i class="fas fa-external-link-alt"></i>
                                     </a>
                                 </div>
                             </div>
                             <div class="text-left">
                                 <div class="">
-                                    <h5 class="fw-bold">GitFinder</h5>
+                                    <h5 class="fw-bold">WeatherInfo</h5>
                                 </div>
                                 <p class="text-muted font-size-sm mt-3">
-                                    To kick things off, I built this project with the help of <span class="text-laravel">Github Users API</span> to view basic details like their followers, repositories of a Github user.
-                                    It also has light/dark themes. 
+                                    Weather Info is a 
+                                    web application designed to keep track of live weather forecast in any city around the world using the 
+                                    <span class="text-laravel">OpenWeather API</span>.
                                 </p>
                             </div>
                             <div class="text-left font-size-sm">
                                 <ul class="list-tech">
-                                    <li>Vue.js</li>
-                                    <li>Vuetify</li>
+                                    <li>HTML</li>
+                                    <li>CSS (Sass)</li>
                                     <li>JavaScript</li>
                                 </ul>
                             </div>
@@ -431,6 +435,9 @@ li::marker {
         padding: 40px 0px;
     }
 
+    .line-accent {
+        display: none !important;
+    }
 }
 
 .project-item img {
@@ -474,6 +481,12 @@ li::marker {
     margin-left: 20px;
 }
 
+.line-accent {
+    width: 40vw;
+    height: 1px;
+    background: #FF2C1F;
+}
+
 .list-tech {
     display: flex;
     align-items: flex-end;
@@ -501,7 +514,7 @@ li::marker {
     color: #FF2C1F;
 }
 
-.ui-card:hover h5, .ui-card:hover ul {
-    color: #fff;
+.ui-card:hover h5, .ui-card:hover ul, .ui-card:hover p {
+    color: #fff !important;
 }
 </style>

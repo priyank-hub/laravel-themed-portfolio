@@ -47,12 +47,15 @@
         </div>
 
         <b-collapse id="my-collapse" v-model="isVisible">
-          <div class="pt-3">
-            <ul class="p-0 mb-0">
-              <li v-for="(item, index) in menu" :key="index" class="m-0 py-2 border-bottom text-black" style="font-weight: 300; list-style-type: none; text-align: left">
-                <a :href="item.url" class="menu-item font-size-sm" :class="mode == 'dark' ? 'text-white' : 'text-black'" @click="isVisible = false">
-                  {{ item.name }}
-                </a>
+          <div class="">
+            <ul class="p-0 mb-0 d-flex flex-column justify-content-around overflow-auto" style="height: 94vh;">
+              <li v-for="(item, index) in menu" :key="index" class="m-0 text-center" style="font-weight: 300; list-style-type: none">
+                <div class="d-flex flex-row align-items-center justify-content-between">
+                  <a :href="item.url" class="menu-item font-size-xl" :class="mode == 'dark' ? 'text-white' : 'text-black'" @click="isVisible = false">
+                    {{ item.name }}
+                  </a>
+                  <div class="line-accent"></div>
+                </div>
               </li>
             </ul>
           </div>
@@ -81,7 +84,6 @@
         <Contact :mode="mode"/>
       </section>
     </div>
-
 
     <div class="d-none d-md-block">
       <div class="links d-flex flex-column align-items-center justify-content-center">
@@ -478,6 +480,12 @@ nav {
 .line {
   height: 100%;
   width: 1px;
+  background: #FF2C1F;
+}
+
+.line-accent {
+  height: 1px;
+  width: 67%;
   background: #FF2C1F;
 }
 </style>
