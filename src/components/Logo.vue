@@ -228,7 +228,7 @@ export default {
   #effd61c4-25b2-43c6-b211-35af3be9007f polygon {
     stroke-dasharray: 600;
     stroke-dashoffset: 600;
-    animation: dash 3s ease-in-out forwards;
+    animation: dash 3.3s ease-in-out forwards;
   }
   
   @keyframes dash {

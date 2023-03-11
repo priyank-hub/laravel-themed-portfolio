@@ -231,13 +231,14 @@ export default {
   mounted() {
     const logo = document.getElementById('logo-animate');
 
+    logo.style.backgroundColor = this.mode == 'dark' ? '#171923' : '#fff';
     logo.classList.remove('opacity-0');
     logo.classList.add('opacity-1');
 
     setTimeout(() => {
       logo.classList.add('opacity-0');
       logo.style.zIndex = -100;
-    }, 2600);
+    }, 2900);
 
     const darkCheck = document.getElementById('night-light-checkbox');
 
@@ -322,7 +323,7 @@ export default {
   height: 100vh;
   width: 100%;
   z-index: 500;
-  background: #171923;
+  /* background: #171923; */
   transition: opacity 0.5s ease-out;
 }
 
