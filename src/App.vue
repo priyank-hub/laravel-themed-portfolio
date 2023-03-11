@@ -287,7 +287,7 @@ export default {
       else if (t == 'light') {
         document.body.style.backgroundColor = 'transparent';
       }
-      return t ? t : 'light';
+      return t ? t : 'dark';
     },
 
     getCheckMode() {
