@@ -144,7 +144,7 @@
             </div>
 
             <div class="col-12 px-0 my-4">
-                <div class="d-flex flex-row mx-0 justify-content-center align-items-center mb-4 reveal">
+                <div class="d-flex flex-row mx-0 justify-content-between align-items-center mb-4 reveal">
                     <div class="line-accent"></div>
                     <div class="fw-bold font-size-xl mx-4" :class="mode == 'dark' ? 'text-white' : 'text-black'">Some Other Projects</div>
                     <div class="line-accent"></div>
@@ -482,7 +482,7 @@ li::marker {
 }
 
 .line-accent {
-    width: 40vw;
+    width: 25vw;
     height: 1px;
     background: #FF2C1F;
 }
