@@ -61,10 +61,10 @@ button {
     border-radius: 0px !important;
 }
 
-button:hover {
+/* button:hover {
     background: #FF2C1F !important;
     color: #fff !important;
-}
+} */
 
 .hover {
     transition: 0.3s all !important;
