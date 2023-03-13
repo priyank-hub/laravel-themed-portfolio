@@ -61,10 +61,56 @@
             </div>
 
             <div class="col-12 card-item px-0 reveal">
-                <div class="row mx-0 align-items-start justify-content-between project-item">
-                    <div class="col-12 col-xl-5 mb-5 d-md-none d-xl-block">
-                        <img src="/assets/portfolio/gitfinder.png" class="" width="100%" style="border-radius: 0px" alt="">
+                <div class="row mx-0 align-items-center justify-content-between project-item">
+                    <div class="col-12 col-xl-5 d-md-none d-xl-block" v-if="mode == 'dark'">
+                        <img src="/assets/portfolio/AppDarkGif.gif" class="app-mobile" style="border-radius: 0px" alt="">
                     </div>
+                    <div class="col-12 col-xl-5 d-md-none d-xl-block" v-else>
+                        <img src="/assets/portfolio/AppGif.gif" class="app-mobile" style="border-radius: 0px" alt="">
+                    </div>
+                    <div class="col-12 col-xl-6 text-left px-0">
+                        <!-- content -->
+                        <h3 class="fw-bold" :class="mode == 'dark' ? 'text-white' : 'text-black'">Online Food Ordering App</h3>
+                        <div class="text-muted">
+                            <p>
+                                The aim of this project is to create a user-friendly and efficient online food ordering app using <span class="text-laravel">Flutter</span>. 
+                                The app is designed to allow users to order food from various restaurants and food outlets with ease.
+                            </p>
+                            <p>
+                                Key features includes:
+                                <ul class="m-0">
+                                    <li>User registration and login.</li>
+                                    <li>The app will list various restaurants, cafes, and food outlets in the user's area. Users can filter the restaurants based on their order types, picked for you and most popular.</li>
+                                    <li>Users can track their order status in real-time, from preparation to delivery. They will receive notifications and updates on the progress of their order.</li>
+                                </ul>
+                            </p>
+
+                            <div class="d-flex flex-row mt-4 social">
+                                <a href="https://github.com/priyank-hub/Taliup_Express_App" target="_blank" class="border-laravel text-decoration-none text-white">
+                                    <div class="hover bg-laravel p-2 px-3">
+                                        <i class="fas fa-code"></i>
+                                        <span class="mx-2">
+                                            Repository
+                                        </span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="border-laravel text-decoration-none text-white mx-2">
+                                    <div class="hover bg-laravel p-2 px-3">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <span class="mx-2">
+                                            View
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 card-item px-0 reveal">
+                <div class="row mx-0 align-items-start justify-content-between project-item">
                     <div class="col-12 col-xl-6 text-left px-0">
                         <h3 class="fw-bold" :class="mode == 'dark' ? 'text-white' : 'text-black'">GitFinder</h3>
                         <div class="text-muted">
@@ -94,6 +140,9 @@
                                 </a>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-12 col-xl-5 mb-5 d-md-none d-xl-block">
+                        <img src="/assets/portfolio/gitfinder.png" class="" width="100%" style="border-radius: 0px" alt="">
                     </div>
                 </div>
             </div>
@@ -437,6 +486,12 @@ li::marker {
 
     .line-accent {
         display: none !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .app-mobile {
+        height: 500px;
     }
 }
 
