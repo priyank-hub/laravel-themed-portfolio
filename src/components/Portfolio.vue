@@ -149,6 +149,9 @@
 
             <div class="col-12 card-item px-0 reveal">
                 <div class="row mx-0 align-items-center justify-content-between project-item">
+                    <div class="col-12 col-xl-5 mb-5 d-md-none d-xl-block px-0">
+                        <img src="/assets/portfolio/bookstore.png" class="" width="100%" style="border-radius: 0px" alt="">
+                    </div>
                     <div class="col-12 col-xl-6 text-left px-0">
                         <!-- content -->
                         <h3 class="fw-bold" :class="mode == 'dark' ? 'text-white' : 'text-black'">E-Commerce Bookstore Project</h3>
@@ -185,9 +188,6 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-xl-5 mb-5 d-md-none d-xl-block px-0">
-                        <img src="/assets/portfolio/bookstore.png" class="" width="100%" style="border-radius: 0px" alt="">
                     </div>
                 </div>
             </div>
