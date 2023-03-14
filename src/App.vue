@@ -74,13 +74,14 @@
         <HomePage :mode="mode"/>
       </section>
 
+      <section id="about-me" style="padding-top: 90px">
+        <AboutMe :mode="mode"/>
+      </section>
+      
       <section id="portfolio" style="padding-top: 90px">
         <Portfolio :mode="mode"/>
       </section>
 
-      <section id="about-me" style="padding-top: 90px">
-        <AboutMe :mode="mode"/>
-      </section>
 
       <section id="resume" style="padding-top: 90px">
         <ResumeSection :mode="mode"/>
